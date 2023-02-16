@@ -1,0 +1,35 @@
+<!--Write a program to create a button on click that button a button will append.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div
+        {
+        	height : 100px;
+        	width : 100px;
+        	border : 2px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+            {
+               $("btn").click(function()
+            {
+		$('body').append("<div> This is a Paragraph </div>");
+               
+            })
+            })
+        })
+    </script>
+</head>
+<body>
+	<btn> Click </btn>
+	
+</body>
+</html>

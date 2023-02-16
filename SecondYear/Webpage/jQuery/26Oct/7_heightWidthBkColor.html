@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	<!--Write a program to create a division on click the division another division will appear 4 times with changing 
+	height,width and background-color. -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.color.min.js.txt"></script>
+    <script src="/"></script>
+    <script src="jquery.color.min.js"></script>
+    <style>
+        div
+        {
+        	height : 100px;
+        	width : 100px;
+        	background-color : red;
+        	border : 2px solid black;
+ 		position : relative;
+       }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("div").ready(function()
+            {
+                $("div").click(function()
+                {
+                    $("div").animate({top:"100px"});
+                    $("div").animate({height:"500px"});
+                    $("div").animate({width:"500px"});
+              	     $("div").animate({backgroundColor:"yellow"});
+    
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<div id="#myDiv"> This is A Box </div> <br>
+</body>
+</html>

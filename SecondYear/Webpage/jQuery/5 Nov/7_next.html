@@ -1,0 +1,53 @@
+<!-- nextAll() :  is used to check the diblings of the Particular elemen--> 
+<!-- Write a program to display 2 images using 2 division Image 1 and image 2 with proper border   -->
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<style>
+			div
+			{
+				height : 150px;
+				width : 90vw;
+				margin : 10px;
+			}
+			.div1
+			{
+				border : 2px solid black;
+			}
+			.div2 
+			{
+				border : 2px solid black;
+			}
+			img
+			{
+				height: 150px;
+			}
+		</style>
+		<script>
+			$(document).ready(function()
+			{
+				$(".div1").click(function()
+				{
+						$(".div1").next().css({"border":"2px solid red"});	
+				})
+				$(".div2").click(function()
+				{
+						$(".div2").next().css({"border":"2px solid green"});	
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="div1">
+			This is Division 1
+		</div>
+		<img class="image1" src="https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png">
+		<div class="div2">
+			This is Division 2
+		</div>
+		<img class="image1" src="https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png">
+		
+		
+	</body>
+</html>

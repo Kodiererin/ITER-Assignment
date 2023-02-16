@@ -1,0 +1,28 @@
+<!-- on Click the text of the paragraph will change -->
+<html>
+	<title> DIDI Question </title>	
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			// your script here
+			$(document).ready(function()
+			{
+				$("p").click(function()
+				{
+					$("p").append("<div> A new Division </div>");
+				})
+			})	
+		</script>
+		<style>
+			/* your Style Here */
+			div
+			{
+				background-color:  Green ;
+				height : 100px;
+				width : 100px;
+			}
+		</style>
+	<body>
+		<p> This is a Paragraph </p>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<!-- Write a Program that the Division hides when the mouse moves out from that Division. -->
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					$("div").ready(function()
+					{
+						$("div").mouseleave(function()
+						{
+							$("div").hide();
+						});
+						
+					});
+					
+				});
+				
+		</script>
+		<style>
+		div
+		{
+			background-color: red;
+			border : 2px solid yellow;
+			height : 100px;
+			width : 100px;
+		}
+	
+		</style>
+	</head>
+	<body>
+		<div> This is A Div
+		<img src=""></div>
+	</body>
+</html>

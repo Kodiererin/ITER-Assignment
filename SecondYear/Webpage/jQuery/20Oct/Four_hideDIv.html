@@ -1,0 +1,32 @@
+<!--  Write a Program such that on Double Click of the Division the Division Hides.-->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					$("div").ready(function()
+					{
+						$("div").dblclick(function()
+						{
+							$("div").hide();
+						});
+					});
+					
+				});
+				
+		</script>
+		<style>
+		div
+		{
+			background-color: red; height: 100px; width: 100px;
+			border : 2px solid yellow;
+		}
+	
+		</style>
+	</head>
+	<body>
+		<div> This is Division </div>
+	</body>
+</html>

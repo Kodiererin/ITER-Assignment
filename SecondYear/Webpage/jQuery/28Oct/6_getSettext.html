@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	<!-- Write a Program that on click of the button changes the text of the paragraph to the entered text in the text field. -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        btn
+        {
+        	height : 100px;
+        	width : 100px;
+        	border : 2px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+            {
+               $("btn").click(function()
+                {
+                    let m =$(".get").val();
+                    $(".set").text(m);     
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter Your Text" class="get">  </input>
+	<btn> Click </btn>
+    <p class="set">Your Text Will be Shown Here.</p>
+	
+</body>
+</html>

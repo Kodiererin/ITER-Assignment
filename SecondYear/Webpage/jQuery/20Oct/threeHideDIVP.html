@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<!--  Write a Program with a yellow background color such that on clicking the Button the Paragraph Hides..-->
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					$("button").ready(function()
+					{
+						$("button").click(function()
+						{
+							$(".myP").hide();
+						});
+					});
+				});
+				
+		</script>
+		<style>
+		body
+		{
+			background-color: yellow;
+		}
+			div
+			{
+				height : 100px;
+				width : 100px;
+				border: 2px solid red;
+				background-color:pink;
+			}
+			p
+			{
+				color : green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> This is A Heading </h1>
+		<button> Button </button>
+		<p class="myP"> This is A paragraph </p>
+		<div class="myP"></div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	<!--Write a program to display a button and a division with proper height , width and backgound-color, onl click the 
+	button the division is going to be animated with toggled width -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+       div
+       {
+       	width : 200px;
+       	height : 200px;
+       	background-color : yellow;
+       	border : 2px solid black;
+       }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $(".click").ready(function()
+            {
+                $(".click").click(function()
+                {
+                    $(".changeMe").animate({width:"toggle"},3000);
+                    $(".changeMe").animate({fontSize:"80px"},1000);
+                     $(".changeMe").animate({backgroundColor:"red"},1000);
+    
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<div class="changeMe"> Click me </div> <br>
+	<button class="click"> Change Me</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<!-- Write a Program that on clicking the Button the Paragraph Toogle In and Toggle out. -->
+
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					$("button").ready(function()
+					{
+						$("button").click(function()
+						{
+							// $("#myP").hide();
+							$("p").toggle();
+						});
+					});
+				});
+				
+		</script>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<!-- <h1> This is A Heading </h1> -->
+		<button> Click here to Toggle</button>
+		<!-- <p id="myP"> This is A paragraph </p> -->
+		<p>The paragrah will hide when the button is clicked and will show again when the button is again clicked. </p>
+	</body>
+</html>

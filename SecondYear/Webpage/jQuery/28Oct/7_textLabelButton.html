@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Write a Program that on click of the button the text in the text field is appeared in the paran and in the alert message. -->
+	
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+	    {
+	     $("btn").click(function()
+		    { 
+                let text = $(".myInp").val();
+                alert(text);
+                $("p").text(text);
+		    })
+	    })
+        })
+    </script>
+</head>
+<body>
+	<input type="text" class="myInp" placeholder="Enter your Text"></input>
+	<btn> Submit  <btn>
+	<p> This is Para </p>
+</body>
+</html>

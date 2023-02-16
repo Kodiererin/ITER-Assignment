@@ -1,0 +1,55 @@
+<!-- Question : Using Toggle Class-->
+<html>
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				$(".one").click(function()
+				{
+					alert("Hello");
+					(".one").addClass("two");
+				})
+			});
+		</script>
+		<style>
+			.one
+			{
+				border : 2px solid red;
+				background-color : red;
+				background-size:cover();
+				height : 200px;
+				width : 300px;
+			}
+			.two
+			{
+				border : 2px solid red;
+				background-color : yellow;
+				background-size:cover();
+				height : 200px;
+				width : 300px;
+			}
+			.three
+			{
+				border : 2px solid blue;
+				background-color : red;
+				background-size:cover();
+				height : 200px;
+				width : 300px;
+			}
+			.four
+			{
+				border : 2px solid green;
+				background-color : red;
+				background-size:cover();
+				height : 200px;
+				width : 300px;
+			}
+			
+		</style>
+	</head>
+	<body>
+			<div class="one"> </div>	
+	</body>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Write a Program to create a Text Field, On clicking the Submit button the alert message is going to appear with the contents on the text field on the alert box. -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div
+        {
+        	height : 200px;
+        	width : 200px;
+        	border : 2px solid black;
+        }
+        btn
+        {
+        	border : 2px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+            {
+                $("btn").click(function()
+                {
+                    let text = $(".myP").val();
+                    alert(text);
+                    $("p").text(text);
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<p> This is A Paragraph </p>
+	<input type="textbox" placeholder="Enter The Text" class="myP"> </input>
+	<btn> Click Me </btn>
+	
+</body>
+</html>

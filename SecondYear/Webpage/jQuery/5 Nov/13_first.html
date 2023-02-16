@@ -1,0 +1,38 @@
+<!-- Filtering --> 
+<!-- firstt() : If we want to find out the first particular element then  -->
+<!-- Syntax : to access the first Division : $('div').first().css(add CSS) -->
+
+<!-- Question : Write a program to create 3 divison with background color and two random paragraph onload the document the first division background color is set to  green 
+[Document.ready is also the load which works when the page opens] -->
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				$("p").first().css({"background-color":"green"});
+			})
+		</script>
+		<style>
+			p
+			{
+				margin : 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<p> This is A Paragraph  </p><p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p><p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		<p> This is A Paragraph  </p>
+		
+	</body>
+</html>

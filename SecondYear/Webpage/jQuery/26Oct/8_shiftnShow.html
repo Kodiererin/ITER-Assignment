@@ -1,0 +1,40 @@
+<!--Write a program to create a button on click that button an image will slide up -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	<!--Write a program to display a image moving the mouse on that image the image is going to shift from left to right
+		and display another image -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .image1
+        {
+        	position : absolute;
+        	border : 2px solid black;
+        }
+        .image2
+        {
+        	position : absolute;
+		border : 2px solid black;      
+	 }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $(".image1").ready(function()
+            {
+                $(".image1").click(function()
+                {
+                    $(".image2").animate({left:"200px"});
+    
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<img class="image2" src="Diwali.gif"> 
+	<img class="image1" src="Diwali.gif">
+</body>
+</html>

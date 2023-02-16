@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--  Write a Program such that on Mouse Leave of the Division the Division Hides.-->
+<head>
+   <title>Hide</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+
+    <style>
+        div
+        {
+            height : 200px;
+            width : 200px;
+            background-color: blueviolet;
+            border : 2px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("div").ready(function()
+            {
+                $("div").mouseleave(function()
+                {
+                    $("div").hide();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div> </div>
+</body>
+</html>

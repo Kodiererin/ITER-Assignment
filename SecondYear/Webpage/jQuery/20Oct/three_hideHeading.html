@@ -1,0 +1,40 @@
+<html>
+	<!-- Write a Program that Hides the h2 Heading on clicking h1 heading , h3 heading onclicking h3 heding and h3 heading on clicking itself. -->
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					$("h1").ready(function()
+					{
+						$("h1").dblclick(function()
+						{
+							$("h1").hide();
+						});
+					});
+					$("h2").ready(function()
+					{
+						$("h2").dblclick(function()
+						{
+							$("h2").hide();
+						});
+					});
+					$("h3").ready(function()
+					{
+						$("h3").click(function()
+						{
+							$("h3").hide();
+						});
+					});
+				});
+				
+		</script>
+		
+	</head>
+	<body>
+		<h1> This is A Heading 1 </h1>
+		<h2> This is Heading 2  <h2>
+		<h3> This is Heading 3 </h3>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Question : Write a program to create a division with background image and border if we click on the division the image is going to be changed  create a class to give a initial style statement use another class to give the style statment-->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+			$(document).ready(function()
+			{
+				$(".div1").click(function()
+				{
+					$(".div1").addClass("div2");
+				});
+			});	
+		</script>
+		<style>
+			.div1
+			{
+				background-image:url("https://images.squarespace-cdn.com/content/v1/57713a8e2994cae381dd86fe/1510405002757-FP2W9HV8ZA0HP2IF3O6A/SOA-PNG.png");
+				height : 400px;
+				width : 400px;
+				background-size:cover;
+				border : 2px solid red;
+			}
+			.div2
+			{
+				background-image:url("https://wallpaperaccess.com/full/40968.jpg");
+				height : 400px;
+				width : 400px;
+				background-size:cover;
+				border : 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="div1"> 
+			</div>	
+	</body>
+</html>

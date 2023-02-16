@@ -1,0 +1,41 @@
+<!-- Question : Write a program to create a division with background color red and border green, on click the division 
+	the background color is hange to be blu eand border is going to be black. -->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+			$(document).ready(function()
+			{
+				$(".div1").click(function()
+				{
+					$(".div1").addClass("div2");
+				});
+			});	
+		</script>
+		<style>
+			.div1
+			{
+				width : 400px;
+				height : 400px;
+				background-color : red;
+				border : green;
+			}
+			.div2
+			{
+				width : 400px;
+				height : 400px;
+				background-color : blue;
+				border : 2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="div1">
+				<p> This is Para 1 </p>
+				<p> This is Para 2 </p>
+			</div>
+			
+		
+	</body>
+</html>

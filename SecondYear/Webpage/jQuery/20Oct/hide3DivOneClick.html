@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <!--  Write a Program such that on Click of the Division the Divisions Fade Out..-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide DIV</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function () { 
+                $('div').fadeOut();
+            });
+        })
+    </script>
+    <style>
+        div
+        {
+            height: 100px;
+            width: 100px;
+            border : 2px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+    <button>CLick ME</button>
+    <div>
+        Division 1
+    </div>
+    <div>Division 2</div>
+    <div>Division 3</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Write a Program that on clicking of the Button a ALert messgage appears.  -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div
+        {
+        	height : 200px;
+        	width : 200px;
+        	border : 2px solid black;
+        }
+        btn
+        {
+        	border : 2px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+            {
+                $("btn").click(function()
+                {
+                    $("p").text("Hello World");
+                    alert("Bhaag Jaao");
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<p> This is A Paragraph </p>
+	<btn> Click Me </btn>
+	
+</body>
+</html>
+<input type="text"> </input>

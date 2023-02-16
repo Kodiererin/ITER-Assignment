@@ -1,0 +1,35 @@
+<!--  Write a Program such that on Hover of the Division the Division Hides.-->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					$("div").ready(function()
+					{
+						$("div").mouseenter(function()
+						{
+							$("div").hide();
+						});
+						
+					});
+					
+				});
+				
+		</script>
+		<style>
+		div
+		{
+			background-color: red;
+			border : 2px solid yellow;
+			height : 100px;
+			width : 100px;
+		}
+	
+		</style>
+	</head>
+	<body>
+		<div> This is A Div</div>
+	</body>
+</html>

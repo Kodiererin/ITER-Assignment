@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	<!--Write a program to to create a button on click te button the box of size 100+100  from left to right-->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div
+        {
+        	height : 100px;
+        	width : 100px;
+        	background-color : red;
+        	border : 2px solid black;
+ 	    	position : relative;
+        }
+        button
+        {
+        	position : relative;
+        	top : 300px;
+		    border : 2px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("button").ready(function()
+            {
+                $("button").click(function()
+                {
+                    $("div").animate({left:"500px"});
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<div> This is A Box </div> <br>
+	<button class="clickMe"> Menu Bar</button>
+</body>
+</html>

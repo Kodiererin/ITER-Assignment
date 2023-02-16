@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+	<!--Write a program to create a division onclick the division a vertical menubar will slide toggle -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .menu
+        {
+        	height : 100vh;
+        	width : 200px;
+        	background-color : red;
+        	border : 2px solid black;
+        	display : none;
+        }
+        .clickMe
+        {
+        	height : 100px;
+		width : 100px;	
+		border : 2px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $(".clickMe").ready(function()
+            {
+                $(".clickMe").click(function()
+                {
+                    $(".menu").slideToggle();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<div class="menu"> <p> Home </p> <p> About </p> <p> Contact Us </p> </div>
+	<div class="clickMe"> Menu Bar</div>
+</body>
+</html>

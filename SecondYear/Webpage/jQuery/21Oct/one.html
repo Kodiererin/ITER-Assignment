@@ -1,0 +1,51 @@
+<html>
+	<!--  Write a Program to create a Page that on clicking the Button appear and On clicking the Second button the Image Hide. Onclicking the Button the Paragraph Hide and On clicking thr second button the Paragraph Shows.-->
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					
+					$(".btn1 .btn4 .btn2 .btn3").ready(function()
+					{
+						$(".btn1").click(function()
+						{
+							$("img").hide();
+						});
+						$(".btn4").click(function()
+						{
+							$("img").show();
+						});
+						$(".btn2").click(function()
+						{
+							$("p").hide();
+						});
+						$(".btn3").click(function()
+						{
+							$("p").show();
+						});
+					});				
+					
+				});
+				
+		</script>
+		<style>
+			img
+			{
+				width : 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1> Happy Diwali </h1>
+		<img src="https://media.tenor.com/5hpGdutm1EQAAAAd/happy-diwali-jethalal.gif">
+		<button class="btn1"> Happy DIwali </button>
+		<button class="btn4"> Diwali </button>
+		<p> Diwali (English: /dɪˈwɑːliː/; Deepavali[3] (IAST: dīpāvalī) or Divali; related to Jain Diwali, Bandi Chhor Divas, Tihar, Swanti, Sohrai and Bandna) is a festival of lights and is one of the major festivals celebrated by Hindus, Jains, and Sikhs.[4] The festival usually lasts five days, or six in some regions of India, and is celebrated during the Hindu lunisolar month Kartika (between mid-October and mid-November).[5][6][7] One of the most popular festivals of Hinduism, Diwali symbolizes the spiritual "victory of light over darkness, good over evil, and knowledge over ignorance".[8][9][10][11] The festival is widely associated with Lakshmi, goddess of prosperity and Ganesha, god of wisdom and the remover of obstacles, with many other regional traditions connecting the holiday to Sita and Rama, Vishnu, Krishna, Durga, Shiva, Kali, Hanuman, Kubera, Yama, Yami, Dhanvantari, or Vishvakarman. Furthermore, it is a celebration of the day Rama returned to his kingdom in Ayodhya with his wife Sita and his brother Lakshmana after defeating the demon Ravana in Lanka and serving 14 years of exile.
+
+ </p>
+		<button class="btn2"> Hide </button>
+		<button class="btn3">Show </button>
+	</body>
+</html>

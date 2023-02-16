@@ -1,0 +1,54 @@
+<!-- Question : Write  program to create 3 paragraph of different background color print the value of the background color on alert message on click a button -->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+			$(document).ready(function()
+			{
+				$(".div1").click(function()
+				{
+					$(".div1").addClass("div2").removeClass("div2").addClass("div3").removeClass("div3").addClass('div4');
+				});
+			});	
+		</script>
+		<style>
+			div
+			{
+				background-size:cover;
+			}
+			.div1
+			{
+				background-image: url(/Images/cat1.jpeg);
+				height : 400px;
+				width : 400px;
+				border : 2px solid red;
+			}
+			.div2
+			{
+				background-image: url(/Images/cat2.jpeg);
+				height : 300px;
+				width : 300px;
+				border : 2px solid red;
+			}
+			.div3
+			{
+				background-image: url(/Images/cat3.jpeg);
+				height : 200px;
+				width : 200px;
+				border : 2px solid red;
+			}
+			.div4
+			{
+				background-image: url(/Images/cat4.jpeg);
+				height : 100px;
+				width : 100px;
+				border : 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="div1"> 
+			</div>	
+	</body>
+</html>

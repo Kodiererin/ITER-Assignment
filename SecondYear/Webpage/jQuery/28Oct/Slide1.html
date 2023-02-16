@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Question : Write a Program to create a division onclick that division another division will slide down. --> 
+    <title>28th Oct</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+   	.announce
+    	{
+		position : relative;
+    	}
+  	body , html
+    	{
+    		border : 1px solid red;
+    		
+    	}
+      	.hImage
+      	{
+      		width : 99vw;
+      		height : 50vh;
+      		padding : 0;
+      		border : 0;
+      		margin : 0;
+      	}
+      	a
+      	{
+      		padding-left : 40px;
+      	}
+      	div
+      	{
+      		border : 2px solid black;
+     	}
+     	.show1 , .show2 ,  .show3 ,  .show4
+     	{
+     		display:none;
+     		width : 100px;
+     		background-color : pink;
+     	}
+     	.navi
+     	{
+     		background-color : 90e0ef;
+     	}
+      	.notice
+      	{
+      	}
+      	.myNotice
+      	{
+      		display : none;
+      		background-color : yellow;
+      	}
+      	.simage
+      	{
+      		width : 50px;
+      		height : 50px;
+      	}
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $(".hImage").ready(function()
+            {
+                $(".hImage").mouseleave(function()
+                {
+                    $(".hImage").fadeOut();
+                })
+            })
+            $(".notice").click(function()
+            {
+            	$(".myNotice").slideDown();
+            })
+            $(".myana").click(function()
+            {
+            	$(".announce").animate({left: '50vw'});
+            })
+       
+            //------------------------------------------------------
+            $(".home").ready(function()
+            {
+                $(".home").mouseenter(function()
+                {
+                    $(".show1").slideDown();
+                })
+                $(".home").mouseleave(function()
+                {
+                    $(".show1").hide();
+                })
+            })
+            $(".academics").ready(function()
+            {
+               $(".academics").mouseenter(function()
+                {
+                    $(".show2").slideDown();
+                })
+                $(".academics").mouseleave(function()
+                {
+                    $(".show2").slideUp();
+                })
+            })
+            $(".admission").ready(function()
+            {
+                $(".admission").mouseenter(function()
+                {
+                    $(".show3").slideDown();
+                })
+                $(".admission").mouseleave(function()
+                {
+                    $(".show3").slideUp();
+                })
+            })
+            $(".about").ready(function()
+            {
+                $(".about").mouseenter(function()
+                {
+                    $(".show4").slideUp();
+                })
+                $(".about").mouseleave(function()
+                {
+                    $(".show4").slideUp();
+                })
+            })
+            
+            
+        })
+    </script>
+</head>
+<body>
+    <div class="navi"> <a class="home" href="#">Home</a><a class="academics" href="#">Academics </a><a class="admission" href="#">Admission </a><a class="about" href="#">About</a</div>
+    <!-- Lets add Division-->
+    
+    <div class="show1">
+    	<table >
+    		<tr><td> Computer Science </td></tr>
+    		<tr><td> Computer Science </td></tr>
+    	</table>
+    </div> 
+     <div class="show2">
+    	<table >
+    		<tr><td> Computer Science </td></tr>
+    		<tr><td> Computer Science </td></tr>
+    	</table>
+    </div> 
+     <div class="show3">
+    	<table >
+    		<tr><td> Computer Science </td></tr>
+    		<tr><td> Computer Science </td></tr>
+    	</table>
+    </div> 
+    <div class="show4">
+    	<table >
+    		<tr><td> Computer Science </td></tr>
+    		<tr><td> Computer Science </td></tr>
+    		<tr><td> Computer Science </td></tr>
+    		<tr><td> Computer Science </td></tr>
+    	</table>
+    </div>
+    
+    <div>
+    <img class="hImage" src="iter.jpg">
+    </div>
+    <div class="myana"> <p class="announce">Announcement </p></div>
+    <div>
+    	<div class="notice"> Notice Board </div>    	    
+    	<div class="myNotice">
+    		<p> Iter Student 1 cr Placement (Sapna Me)</p>
+    		<p> Iter Student Wins Smart India Hackathon.</p>
+    		<p> Iter gets 100% placement</p>
+    		
+    	</div>
+    </div>
+    <div class="foot">
+    	<img class="simage" src="soa.png">
+    	<footer class="foot"> Jagamohan Nagar,Khandagiri,Bhubaneswar,Odisha,PIN Code - 751030 </footer>
+    </div>
+</body>
+</html>

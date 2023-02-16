@@ -1,0 +1,61 @@
+<html>
+	<!--  Write a Program such that on clicking the Button the buttons the respective Division FadeIn.-->
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					
+					$(" #a #b #c #btn1 #btn2 #btn3").ready(function()
+					{
+						$("#btn1").click(function()
+						{
+							$("#a").fadeIn();
+						});
+						$("#btn2").click(function()
+						{
+							$("#b").fadeIn("slow");
+						});
+						$("#btn3").click(function()
+						{
+							$("#c").fadeIn(3000);
+						});
+						
+					});				
+					
+				});
+				
+		</script>
+		<style>
+		div
+		{
+			width : 200px;
+			height : 200px;
+			position : relative;
+			background-color : red;
+			display : none;
+			
+		}
+		#a
+		{
+			background-color : red;
+		}
+		#b
+		{
+			background-color : yellow;
+		}
+		#c
+		{
+			background-color : blue;
+		}
+		</style>
+	</head>
+	<body>
+	<div id="a"> </div> <button id="btn1"> Click Me </button> <br>
+	<div id="b"> </div>	<button id="btn2"> Click Me </button>	<br>
+	<div id="c"> </div>	<button id="btn3"> Click Me </button>	<br>
+	
+	</body>
+		
+</html>

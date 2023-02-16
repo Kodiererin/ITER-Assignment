@@ -1,0 +1,32 @@
+<!-- eq() : takes Index as an argument which like array, -->
+<!-- So to find the second division which is inside the parent division  -->
+
+<!--  -->
+<!-- Write a Program to create 5 paragraph with background color on load the HTML Page the third paragraph background color is going to change -->
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				$("p").eq(3).css({"background-color":"green"});
+			})
+		</script>
+		<style>
+			p
+			{
+				margin : 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p> This is A Paragraph One </p>
+			<p> This is A Paragraph Two </p> 
+			<p> This is A Paragraph Three </p> 
+			<p> This is A Paragraph Four </p> 
+			<p> This is A Paragraph Five </p> 
+		</div>
+	</body>
+</html>

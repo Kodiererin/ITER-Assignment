@@ -1,0 +1,40 @@
+<!--Write a program to create a button on click that button an image will slide up , slideDown , fadeIn and fadeOut simultaneously. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        div
+        {
+        	height : 200px;
+        	width : 200px;
+        	border : 2px solid black;
+        }
+        btn
+        {
+            height: 20px;
+            width: 30px;
+            background-color: rebeccapurple;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+            {
+                $("btn").click(function()
+                {
+                    $("div").slideUp();
+                    $("div").slideDown();
+                    $("div").fadeOut().fadeIn();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+	<btn> Click Me </btn>
+	<div> </div>
+</body>
+</html>

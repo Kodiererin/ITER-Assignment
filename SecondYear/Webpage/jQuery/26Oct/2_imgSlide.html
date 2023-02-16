@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Write a Program thet On click of the Button Slides up the Image -->
+    <title>Hide</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        img
+        {
+        	border : 2px solid black;
+        }
+        btn
+        {
+            border: 2px solid blue;
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $("btn").ready(function()
+            {
+                $("btn").click(function()
+                {
+                    $("img").slideUp();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<btn> Slide Up </btn>
+    <img src="Diwali.gif">
+</body>
+</html>

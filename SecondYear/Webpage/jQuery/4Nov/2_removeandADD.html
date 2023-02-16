@@ -1,0 +1,47 @@
+<!-- Question : Write a program to create a division with background color and border and a button on click the buttton h divison is going to deleted and a new division with a diferent background color and border is goind to be added.-->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+			$(document).ready(function()
+			{
+				$("btn").click(function()
+				{
+					$(".div1").remove();
+					$(".div2").append();
+				});
+			});	
+		</script>
+		<style>
+			btn
+			{
+				border : 2px solid red;
+			}
+			.div1
+			{
+				width : 200px;
+				height : 200px;
+				background-color : pink;
+				border : 2px solid red;
+				position : absolute;
+			}
+			.div2
+			{
+				width : 400px;
+				height : 400px;
+				background-color : yellow;
+				border : 2px solid red;
+			}
+		</style>
+	</head>
+	<body>
+			<btn> Click to hide </btn>
+			<div class="div1">
+			</div>
+			<div class="div2">
+				This is Division 
+			</div>
+		
+	</body>
+</html>

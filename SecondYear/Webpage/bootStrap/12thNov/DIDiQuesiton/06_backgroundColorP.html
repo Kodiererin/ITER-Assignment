@@ -1,0 +1,34 @@
+<!-- on Click the text of the paragraph will change -->
+<html>
+	<title> DIDI Question </title>	
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			// your script here
+			$(document).ready(function()
+			{
+				$(".p1").click(function()
+				{
+					$(".p1").css("background-color","pink");
+				})
+			})	
+		</script>
+		<style>
+			/* your Style Here */
+			.p1
+			{
+				background-color: red ;
+			}
+			.p2
+			{
+				background-color: yellow ;
+			}
+			.p3
+			{
+				background-color: pink;
+			}
+		</style>
+	<body>
+		<p class="p1"> THis is A pagragraph</p>
+	</body>
+</html>

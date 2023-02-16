@@ -1,0 +1,83 @@
+<!-- Question : Write  program to create 3 paragraph of different background color print the value of the background color on alert message on click a button -->
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.3.1.slim.min.js"> </script>
+		<script>
+			$(document).ready(function()
+			{
+				$("td").mouseenter(function()
+				{
+					$("td").css("background-color","yellow");
+					$("td").css("border","2px solid black");0
+				})
+				$("td").mouseleave(function()
+				{
+					$("td").css("background-color","red");
+					$("td").css("border","2px solid yellow");0
+				})
+				$(".td2").mouseenter(function()
+				{
+					// alert("mousein")
+					$(".menu1").show(function()
+					{
+						$(".menu1").slideDown();
+					});
+				})
+				$(".td2").mouseleave(function()
+				{
+					// alert("mousein")
+					$(".menu1").hide(function()
+					{
+						$(".menu1").slideDown();
+					});
+				})
+				
+				
+				
+			});	
+		</script>
+		<style>
+		table
+		{
+			background-color : yellow;
+			border : 2px solid black;
+			text-align : center;
+		}
+		th
+		{
+			border : 2px solid black;
+			background-color : red;
+			padding-left : 12vw;
+			padding-right : 16vw;
+		}
+		.menu1
+		{
+			display: none;
+			position: relative;
+			left: 32%;
+		}
+		.tble
+		{
+			width: 32%;
+		}
+			
+		</style>
+	</head>
+	<body>
+		<div class = "nav"> 
+			<table>
+				<tr> 
+					<th class="td1"> Home </th> <th class="td2"> Course </th> <th class="td2"> Academic </th>
+				</tr>
+			</table>
+			<div class="menu1">
+				<table class="tble">
+					<tr><td>B.Tech</td></tr>
+					<tr><td>MTech</td></tr>
+					<tr><td>BCA</td></tr>
+					<tr><td>MCA</td></tr>
+				</table>
+			</div>
+	</body>
+</html>

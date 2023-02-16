@@ -1,0 +1,57 @@
+<!-- Siblings : siblings() is used to check the diblings of the Particular elemen--> 
+<!-- Write a program to create a HTML page as BelowOn mouse Hover on the Body the Siblings of division 2 change their border color  -->
+<!--  Siblings Mtlb Bhai Behen -->
+
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<style>
+			div
+			{
+				height : 200px;
+				width : 90vw;
+				margin : 10px;
+			}
+			.div1 , .div3 , .div2 , .div4
+			{
+				border : 2px solid black;
+			}
+			.div2 
+			{
+				border : 2px solid black;
+			}
+			.div3
+			{
+				border : 2px solid black;
+			}
+			.div4
+			{
+				border : 2px solid black;
+			}
+		</style>
+		<script>
+			$(document).ready(function()
+			{
+				$("body").hover(function()
+				{
+					$(".div2").siblings().css({"border":"3px solid red "})
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="div1">
+			This is Division 1
+		</div>
+		<div class="div2">
+			This is Division 2
+		</div>
+		<div class="div3">
+			This is Disivion 3
+		</div>
+		<div class="div4">
+			This is Disivion 3
+		</div>
+	</body>
+</html>

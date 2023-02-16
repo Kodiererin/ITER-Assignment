@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<!-- WAP to create a Page having Division, that on click hides the 1st Division and on double click shows the first Division -->
+		<!-- Both the division are Overlaping with each other. -->
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+		<script>
+				$(document).ready(function()
+				{
+					
+					$(".one .two").ready(function()
+					{
+						$(".two").click(function()
+						{
+							$(".two").hide();
+						});
+						$(".one").dblclick(function()
+						{
+							$(".two").show();
+						});
+						
+					});				
+					
+				});
+				
+		</script>
+		<style>
+		.one
+		{
+			height : 200px;
+			width : 200px;
+			border : 2px solid black;
+			background-color: black;
+		}
+		.two
+		{
+			height : 200px;
+			width : 200px;
+			border : 2px solid blue;
+			background-color: yellow;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="one">  <div>
+		<div class="two"> </div>
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title> Form	</title>
+		<style>
+		button 
+		{
+			position : relative;
+			left : 100px;
+		}
+		.dropdown:hover + .content
+		{
+			display : flex;
+			position : relative;
+			
+		}	+
+		button
+		{
+			padding-bottom : 0;
+			margin-bottom:0;
+			
+		}
+		.content
+		{
+			display :none;
+		}	
+		li
+		{
+			text-align : center;
+			border : 2px solid red;
+			padding  : 20px;
+			font-size : 20px;
+			background-color : yellow;
+			
+		}
+		.cs
+		{
+			color : red;
+		}
+		.eeCourse
+		{
+			color : blue;
+		}
+		.me
+		{
+			color : green;
+		}
+		.ce
+		{
+			color : purple;
+		}
+		.it
+		{
+			color : black;
+		}
+		ul
+		{
+			padding-top : 0;
+			margin-top : 0;
+		}
+		</style>
+	</head>
+	<body>
+				<div class="dropdown">
+					<button> Course </button>
+				</div>
+					<div class="content">
+						<ul type="none">
+							<li class="cs"> Computer Science </li>
+							<li class="ee"> Electrical Engineering </li>
+							<li class="me"> Mechanotronics Engineering </li>
+							<li class="ce"> Civil Engineering </li>
+							<li class="it"> Information Technology </li>
+							
+						</ul>
+						
+					</div>
+				</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- Question1 : Parent Tag -->
+<!-- Write a Program to create a HTML page as Below and change the color of the all children of division 1.--> 
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{	
+				$(".div1").children().css({"border":"2px solid black" , "background-color":"yellow"})	;
+				console.log(".div1").child();
+			});
+		</script>
+		<style>
+			div
+				{
+					padding: 10px;
+					margin: 10px;
+				}
+		</style>
+	</head>
+	<body>
+		<!-- On click H1 the Parent Division Border is going to change -->
+		<div class="div1" style="border: 2px solid darkred;">
+			<div class="div2" style="border: 2px solid olive;">
+				<div class="div3" style="border: 2px solid black;">
+						<h1> This is A Heading </h1>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>

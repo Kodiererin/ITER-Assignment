@@ -1,0 +1,43 @@
+<!-- Question 3 : Using Parent Until : Parent Until  -->
+<!-- Question : Do as Directed -> Kha se Kha tk changes and Editing krna h Woh Kr skte ho!-->
+
+<!-- Write a Program  On click H1 the Parent Division Border is going to change -->
+
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function()
+			{
+				$("h1").click(function()
+				{
+					$(".div4").parentsUntil(".div1").css({"border":"2px solid red"});
+				})
+			})
+		</script>
+		<style>
+			div
+				{
+					padding: 10px;
+					margin: 10px;
+				}
+			h1
+			{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- On click H1 the Parent Division Border is going to change -->
+		<div class="div1" style="border: 2px solid darkred;">
+			<div class="div2" style="border: 2px solid groove;">
+				<div class="div3" style="border:2px solid black;">
+					<div class="div4" style="border: solid green;">
+							<h1> This is A Heading </h1>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
+
