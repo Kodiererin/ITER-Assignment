@@ -1,0 +1,24 @@
+package March_15;
+
+public class p2_BinaryToDecimal {
+	public static void main(String[] args) {
+		System.out.println(decimalToBinary(5));
+	}
+	public static String decimalToBinary(int x) {
+		Long time = System.currentTimeMillis();
+		String m ="";
+		int c=1;
+		while(x>0) {
+			c+=1;
+			m = m+x%2;
+			c+=1;
+			x/=2;
+			c+=1;
+		}
+		c+=1;
+		System.out.println("Time Complexity is "+c);
+		System.out.println("The Total Time Complexity is "+c);
+		Long time2 = System.currentTimeMillis()-time;
+		return m;
+	}
+}

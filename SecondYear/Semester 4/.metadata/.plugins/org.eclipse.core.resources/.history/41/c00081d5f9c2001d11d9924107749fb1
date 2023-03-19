@@ -1,0 +1,15 @@
+package March_15;
+
+public class p2_BinaryToDecimal {
+	public static void main(String[] args) {
+		System.out.println(decimalToBinary(5));
+	}
+	public static String decimalToBinary(int x) {
+		String m ="";
+		while(x>0) {
+			m = m+x%2;
+			x/=2;
+		}
+		return m;
+	}
+}
