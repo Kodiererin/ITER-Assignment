@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Day1_Introduction,org.eclipse.launchbar.core.descriptorType.default\:P1_SumOfSum,org.eclipse.launchbar.core.descriptorType.default\:p2_DecimalToBinary,org.eclipse.launchbar.core.descriptorType.default\:p3_StringNumberSum,org.eclipse.launchbar.core.descriptorType.default\:p4_DecimalToBinary,org.eclipse.launchbar.core.descriptorType.default\:TimeComplexityRecursion,org.eclipse.launchbar.core.descriptorType.default\:Homework
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Day1_Introduction/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Day1_Introduction/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
