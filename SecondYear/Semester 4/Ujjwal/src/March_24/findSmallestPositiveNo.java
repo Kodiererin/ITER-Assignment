@@ -16,6 +16,6 @@ public class findSmallestPositiveNo {
 			if(obj.get(i)+1!=obj.get(i+1))
 				num = obj.get(i);
 		}
-		return num+1;
+		return num;
 	}
 }

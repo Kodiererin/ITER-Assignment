@@ -7,7 +7,7 @@ public class a_rotateArray {
 //		rotate(2, arr);
 //		System.out.println(BinarySearch(4, 0, arr.length-1, arr));
 		System.out.println(subArray(arr));
-		System.out.println(optimizedSol(arr));
+//		System.out.println(optimizedSol(arr));
 	} 
 //	Rotate an Array K times
 	public static void rotate(int k , int [] arr) {
@@ -52,15 +52,15 @@ public class a_rotateArray {
 //	Bug in the code! Please Check!
 	
 //	Optimised Solution
-//	public static int optimizedSol(int[] arr) {
-//		int[] solarr = new int[arr.length];
-//		int max = Integer.MIN_VALUE;
-//		for(int i=1 ; i<arr.length ; i++) {
-//			solarr[i-1] = arr[i]+arr[i-1];
-//			arr[i] = arr[i]+arr[i-1];
-//			solarr[i-1] = arr[i]+solarr[i-1];
-//			max = Math.max(max, solarr[i-1]);
-//		}
-//		return max;
-//	}
+	public static int optimizedSol(int[] arr) {
+		int[] solarr = new int[arr.length];
+		int max = Integer.MIN_VALUE;
+		for(int i=1 ; i<arr.length ; i++) {
+			solarr[i-1] = arr[i]+arr[i-1];
+			arr[i] = arr[i]+arr[i-1];
+			solarr[i-1] = arr[i]+solarr[i-1];
+			max = Math.max(max, solarr[i-1]);
+		}
+		return max;
+	}
 }

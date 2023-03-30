@@ -1,0 +1,54 @@
+package March_29;
+
+public class nextPathSum {
+	public static void main(String[] args) {
+		int[] arr1 = {12,13,18,20,22,26,70};
+		int[] arr2 = {11,15,18,19,20,26,30,31};
+		System.out.println(maxSum(arr1, arr2));
+	}
+	public static int maxSum(int[] arr1 , int[] arr2) {
+		int sum1 = 0;
+		int sum2 = 0;
+		int finalSum=0;
+		int a =0;
+		int b=0;
+		
+		int c = Math.min(arr1.length, arr2.length);
+		int i=0;
+		for( ; i<c; i++) {
+			if(arr1[i]!=arr2[i]) {
+				sum1+=arr1[i];
+				sum2+=arr2[i];
+			}
+			else {
+				finalSum = finalSum+arr1[i]+Math.max(sum1, sum2);
+//				System.out.println(sum1);
+//				System.out.println(sum2);
+				sum1=0;
+				sum2=0;
+				System.out.println("Final Sum"+finalSum);
+			}
+		}
+		finalSum+=Math.max(sum1, sum2);
+//		sum1=0;sum2=0;
+//		a = i-1;
+//		b=i-1;
+//		if(a<arr1.length) {
+//			for(int j=a ; j<arr1.length ; j++) {
+//				sum1+=arr1[j];
+//				System.out.println(sum1);
+//			}
+//		}
+//		if(b<arr2.length) {
+//			for(int j=b ; i<arr2.length ; i++) {
+//				sum2+=arr2[j];
+//				System.out.println(sum2);
+//			}
+//		}
+//		
+//		finalSum+=Math.max(sum1, sum2);
+//		System.out.println(finalSum);
+//		
+		return finalSum;
+	}
+}
