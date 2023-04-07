@@ -56,8 +56,6 @@ public class Day1_Introduction {
 			c++;
 		}
 		c++;
-		System.out.println("The Total Time Complexity is "+c);
-		Long time2 = System.currentTimeMillis()-time;
 		System.out.println("Actual time in Millisecond is "+time2);
 		return sum;
 	}

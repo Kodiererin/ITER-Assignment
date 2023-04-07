@@ -1,0 +1,12 @@
+package Assignments;
+
+public class April_1_TreeSet {
+	public static void main(String[] args) {
+		compute();
+	}
+	public static void compute() {
+		java.util.TreeSet<Integer> obj = new java.util.TreeSet<>();
+		obj.add((int)Math.random()*10+1);
+		System.out.println((int)Math.random()*10+10);
+	}
+}

@@ -1,0 +1,16 @@
+package Assignments;
+
+public class April_1_TreeSet {
+	public static void main(String[] args) {
+		compute();
+	}
+	public static void compute() {
+		java.util.TreeSet<Integer> obj = new java.util.TreeSet<>();
+		for(int i=0 ; i<10 ; i++)	obj.add((int)(Math.random()*100)+0);
+		
+//		Display the Tree Set
+		for (Integer integer : obj) {
+			System.out.println(obj);
+		}
+	}
+}

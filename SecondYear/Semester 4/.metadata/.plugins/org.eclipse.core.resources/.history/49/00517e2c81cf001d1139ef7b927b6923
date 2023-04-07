@@ -1,0 +1,14 @@
+package March_31;
+//	Tower of Hanoi Problem
+//	Transfer the Disc from Smaller to Larger.
+public class towerOfHanoi {
+	public static void main(String[] args) {
+		towerOfHanoi('A','B','C');
+		System.out.println();
+	}
+	public static void towerOfHanoi(char A , char B , char C) {
+		towerOfHanoi(A, C, B);
+		System.out.println(A+" "+" "+B+" "+C);
+		towerOfHanoi(B, A, C);
+	}
+}
