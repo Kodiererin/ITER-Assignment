@@ -1,0 +1,35 @@
+package April_14;
+
+public class c_minimumSWAP {
+	public static void main(String[] args) {
+		
+	}
+//	WAP to find minimum swap required to bring all values less than a given value 
+//	from left of the array.
+	public static void minimumSwap() {
+		int [] arr = {10,20,2,30,8,6,40,5};
+		int k = 9;
+		int i=0;
+		
+		int rester=0;
+		int pointer=0; 
+		
+		while(pointer<arr.length) {
+			if(arr[pointer]<k) {
+				int temp = arr[pointer];
+				arr[pointer] = arr[rester];
+				arr[rester] = temp;
+				
+				pointer=0;
+				rester++;
+			}
+			else {
+				pointer++;
+			}
+		}
+		
+		for(int j=0 ; j<arr.length ; j++) {
+			System.out.println(arr[j]);
+		}
+	}
+}
