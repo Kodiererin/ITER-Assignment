@@ -1,5 +1,8 @@
 package Assignments.PartA;
 
+import javax.swing.plaf.multi.MultiButtonUI;
+import javax.swing.text.AbstractDocument.LeafElement;
+
 public class DFS_traverse {
     static class Tree{
         int data;
@@ -22,14 +25,43 @@ public class DFS_traverse {
         head.left.left.left = new Tree(60);
         head.right.right.right = new Tree(70);
 
-        System.out.println("InOrder Traversal");
-        DFS_Traverse_inorder(head);
-        System.out.println("Pre Order Traversal");
-        DFS_Traverse_preOrder(head);
-        System.out.println("PostOrder Traversal");
-        DFS_Traverse_postOrder(head);
+        // System.out.println("InOrder Traversal");
+        // DFS_Traverse_inorder(head);
+        // System.out.println("Pre Order Traversal");
+        // DFS_Traverse_preOrder(head);
+        // System.out.println("PostOrder Traversal");
+        // DFS_Traverse_postOrder(head);
+
+        usingStackCollection(head);
 
     }
+
+    // Using Stack Collection Frameword and Without using Recursion
+    public static void usingStackCollection(Tree Head){
+        System.out.println("Kem Cho India");
+        
+        Tree tempHead = Head;
+        
+        java.util.Stack<Tree> stack = new java.util.Stack<>();
+        stack.push(tempHead);
+        tempHead = tempHead.left;
+        while(tempHead!=null){
+            stack.push(tempHead);
+            tempHead = tempHead.left;
+        }
+        tempHead = Head.right;
+        while(tempHead!=null){
+            stack.push(tempHead);
+            tempHead = tempHead.right;
+        }
+
+        while(!stack.isEmpty()){
+            System.out.println(stack.peek().data);
+            stack.pop();
+        }
+    }
+
+
     public static void DFS_Traverse_inorder(Tree Head){
         // Inorder Traversal
         if(Head==null) return;
@@ -51,4 +83,5 @@ public class DFS_traverse {
         DFS_Traverse_postOrder(Head.right);
         System.out.println(Head.data);
     }
+
 }
