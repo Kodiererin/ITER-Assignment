@@ -33,7 +33,7 @@ public class nextPathSum {
 		}
 		finalSum+=Math.max(sum1, sum2);
 //		System.out.println(finalSum);
-		System.out.println(i);
+		// System.out.println(i);
 //		As the I gets Updated so we have to decrement i
 		if(arr1.length>arr2.length) {
 			for( ; i<arr1.length ; i++)

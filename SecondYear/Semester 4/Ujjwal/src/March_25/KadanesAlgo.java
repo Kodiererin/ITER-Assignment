@@ -4,7 +4,7 @@ package March_25;
 
 public class KadanesAlgo {
 	public static void main(String[] args) {
-		int[] arr = {-2,-3,4,-1,-2,1,5,-3};
+		int[] arr = { -2, -3, 4, -1, -2, 1, 5, -3};
 		System.out.println(KadanensAlgorithm(arr));
 	}
 	public static int KadanensAlgorithm(int[] arr) {
