@@ -1,87 +1,49 @@
 package Assignments.PartA;
 
-import javax.swing.plaf.multi.MultiButtonUI;
-import javax.swing.text.AbstractDocument.LeafElement;
-
 public class DFS_traverse {
-    static class Tree{
-        int data;
-        Tree left;
-        Tree right;
-        Tree(int data){
-            this.left = null;
-            this.data = data;
-            this.right = null;
-        }
-    }
-    public static void main(String[] args) {
-        Tree head = new Tree(10);
-        head.left = new Tree(20);
-        head.right = new Tree(30);
+	public static void addLink(java.util.ArrayList<java.util.ArrayList<Integer>> adj , int u , int v) {
+		adj.get(v).add(u);
+		adj.get(u).add(v);
+	}
+	public static void creatingArray() {
+		int size = 7;
+		java.util.ArrayList<java.util.ArrayList<Integer>> adj = new java.util.ArrayList<java.util.ArrayList<Integer>>(size);
+		
+		for(int i=0 ; i<size ; i++) {
+			adj.add(new java.util.ArrayList<Integer>());
+		}
+		
+		addLink(adj, 0, 1);
+		addLink(adj, 1, 2);
+		addLink(adj, 2, 3);
+		addLink(adj, 0, 4);
+		addLink(adj, 4, 5);
+		addLink(adj, 4, 6);
+		addLink(adj, 5, 6); 
+		
+		deapthFirstSearch(adj);
+	}
+	public static void deapthFirstSearch(java.util.ArrayList<java.util.ArrayList<Integer>> adj) {
+		boolean[] visited = new boolean[adj.size()];
+		for(int i=0 ; i<adj.size() ; i++) {
+			if(visited[i]==false) {
+				DFS(adj,visited , i);
+			}
+		}
+	}
+	
+	public static void DFS(java.util.ArrayList<java.util.ArrayList<Integer>> adj , boolean[] visited , int source) {
+		visited[source]= true;
+		System.out.println(source+" ");
+		for(int i = source ; i<adj.size() ; i++) {
+			if(visited[i]==false) {
+				DFS(adj,visited,i);
+			}
+		}
+	}
 
-        head.left.left = new Tree(40);
-        head.right.right = new Tree(50);
-
-        head.left.left.left = new Tree(60);
-        head.right.right.right = new Tree(70);
-
-        // System.out.println("InOrder Traversal");
-        // DFS_Traverse_inorder(head);
-        // System.out.println("Pre Order Traversal");
-        // DFS_Traverse_preOrder(head);
-        // System.out.println("PostOrder Traversal");
-        // DFS_Traverse_postOrder(head);
-
-        usingStackCollection(head);
-
-    }
-
-    // Using Stack Collection Frameword and Without using Recursion
-    public static void usingStackCollection(Tree Head){
-        System.out.println("Kem Cho India");
-        
-        Tree tempHead = Head;
-        
-        java.util.Stack<Tree> stack = new java.util.Stack<>();
-        stack.push(tempHead);
-        tempHead = tempHead.left;
-        while(tempHead!=null){
-            stack.push(tempHead);
-            tempHead = tempHead.left;
-        }
-        tempHead = Head.right;
-        while(tempHead!=null){
-            stack.push(tempHead);
-            tempHead = tempHead.right;
-        }
-
-        while(!stack.isEmpty()){
-            System.out.println(stack.peek().data);
-            stack.pop();
-        }
-    }
-
-
-    public static void DFS_Traverse_inorder(Tree Head){
-        // Inorder Traversal
-        if(Head==null) return;
-        DFS_Traverse_inorder(Head.left);
-        System.out.println(Head.data);
-        DFS_Traverse_inorder(Head.right);
-    }
-    public static void DFS_Traverse_preOrder(Tree Head){
-        if(Head==null) return;
-        System.out.println(Head.data);
-        // Inorder Traversal
-        DFS_Traverse_preOrder(Head.left);
-        DFS_Traverse_preOrder(Head.right);
-    }
-    public static void DFS_Traverse_postOrder(Tree Head){
-        if(Head==null) return;
-        // Inorder Traversal
-        DFS_Traverse_postOrder(Head.left);
-        DFS_Traverse_postOrder(Head.right);
-        System.out.println(Head.data);
-    }
-
+	
+	public static void main(String[] args) {
+		creatingArray();
+	}
 }
