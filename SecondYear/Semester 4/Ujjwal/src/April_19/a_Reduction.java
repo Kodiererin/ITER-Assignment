@@ -1,7 +1,5 @@
 package April_19;
 
-import java.util.Collections;
-
 public class a_Reduction {
 	public static int[] sort(int[] arr) {
 		for(int i=0 ; i<arr.length ; i++) {
