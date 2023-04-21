@@ -1,4 +1,4 @@
-package Assignments.PartA;
+package Assignments_2A;
 
 import java.util.Queue;
 

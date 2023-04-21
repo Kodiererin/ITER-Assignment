@@ -1,4 +1,4 @@
-package Assignments.Part_B;
+package Assignments_2B;
 
 public class Question1 {
     public static void main(String[] args) {

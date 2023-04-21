@@ -1,4 +1,4 @@
-package Assignments.PartA;
+package Assignments_2A;
 
 public class DFS_traverse {
 	public static void addLink(java.util.ArrayList<java.util.ArrayList<Integer>> adj , int u , int v) {

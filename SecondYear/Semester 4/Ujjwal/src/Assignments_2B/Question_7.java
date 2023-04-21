@@ -1,4 +1,4 @@
-package Assignments.Part_B;
+package Assignments_2B;
 // Write a program to read N number from user and keep it in suitable
 // data structure so that no duplicate element is present in that.
 class Question_7{
