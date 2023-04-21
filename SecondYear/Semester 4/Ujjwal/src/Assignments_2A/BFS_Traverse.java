@@ -1,5 +1,6 @@
 package Assignments_2A;
-
+//Q5. Write a java program to traverse a graph using breadth first search (use
+//ArrayDeque collection ).
 import java.util.Queue;
 
 

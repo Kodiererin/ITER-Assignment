@@ -1,5 +1,6 @@
 package Assignments_2A;
-
+//	Q6. Write a java program to traverse a graph using depth first search (use
+//	Stack collection ).
 public class DFS_traverse {
 	public static void addLink(java.util.ArrayList<java.util.ArrayList<Integer>> adj , int u , int v) {
 		adj.get(v).add(u);
