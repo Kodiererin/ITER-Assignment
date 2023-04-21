@@ -7,10 +7,6 @@ class Process{
 	Process(String p , int burstTime , int arrival){
 		this.arrival = arrival;
 		this.burstTime = burstTime;
-		this.arrival = arrival;
-	}
-	public void equalsTo() {
-		
 	}
 	public String toString() {
 		return this.p+" "+this.arrival+" "+this.burstTime;
