@@ -12,17 +12,23 @@ public class Question08 {
 			System.out.println(getArr[i]);
 		}
 	}
-	public static int[] arrangeArray(int []arr) {
-		java.util.HashMap<Integer, Integer> map = new java.util.HashMap<>(arr.length);
-		for(int i=0 ; i<map.size() ; i++) {
-			map.put(arr[i], arr[i]);
-		}
-		for(int i=0 ; i<map.size() ; i++) {
-			arr[i] = map.get(arr[i]);
-			if(map.containsKey(arr[i])==false) {
-				arr[i] = -1;
+	public static int[] arrangeArray(int[] arr) {
+//		Assuming the Array is sorted.
+		java.util.HashMap<Integer, Integer> map = new java.util.HashMap<Integer, Integer>();
+		int m = 0;
+		for(int i=0 ; i<arr[arr.length-1] && m<arr.length; i++) {
+			if(i==arr[m]) {
+				map.put(i,i);
+				m++;
+			}
+			else {
+				map.put(i, -1);
 			}
 		}
-		return arr;
+		int[] arr2 = new int[map.size()];
+		for(int i=0 ; i<map.size(); i++) {
+			arr2[i] = map.get(i);
+		}
+		return arr2;
 	}
 }
