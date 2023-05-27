@@ -1,9 +1,10 @@
-package testUjjwal;
+package a_Important;
 
+//	One of the Important Question
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Process implements Comparable{
+class Process implements Comparable<Object>{
 	String appProcess;
 	int BurstTyme;
 	int ArrivalTime;

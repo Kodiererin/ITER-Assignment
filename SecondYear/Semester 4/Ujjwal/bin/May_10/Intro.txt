@@ -1,0 +1,3 @@
+Linked List : 
+	Node : It is a container where we can put some data.
+	

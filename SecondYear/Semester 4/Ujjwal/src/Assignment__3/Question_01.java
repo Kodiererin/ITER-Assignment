@@ -1,4 +1,4 @@
-package Assignment_3;
+package Assignment__3;
 //	Given an array containing 0s and 1s. Write an algorithms to sort array
 //	so that 0s come first followed by 1s. Also find the minimum number of
 //	swaps required to sort the array.

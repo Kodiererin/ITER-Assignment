@@ -1,4 +1,4 @@
-package Assignment_3;
+package Assignment__3;
 //	. Element left after reductions. Given an array of positive elements. You
 //	need to perform reduction operation. In each reduction operation smallest
 //	positive element value is picked and all the elements are subtracted by that

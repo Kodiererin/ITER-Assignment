@@ -1,4 +1,4 @@
-package Assignment_3;
+package Assignment__3;
 //	 Given an array of even and odd numbers, write a program to separate
 //   even numbers from the odd numbers.
 public class Question_06 {

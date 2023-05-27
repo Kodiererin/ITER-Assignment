@@ -1,4 +1,4 @@
-package Assignment_3;
+package Assignment__3;
 //	 Write a program to find minimum swaps required to bring all elements
 //	less than given value together at the start of array
 

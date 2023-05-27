@@ -3,7 +3,7 @@ package ImportantQuestions;
 import java.util.Collections;
 import java.util.Comparator;
 
-import Assignments.Process;
+import a_Important.Process;
 
 //	Shortest Remaining Time next(SRTN) is a scheduling algorithm which serve first the process
 //	Write a JAVA program which take N process burst time and print the scheduling sequence using SRTN.

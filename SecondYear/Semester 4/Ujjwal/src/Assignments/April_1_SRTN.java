@@ -1,6 +1,9 @@
 package Assignments;
+
+import a_Important.Process;
+
 //	To Be done Later.
-class Process{
+class PProcess{
 	String p;
 	int burstTime;
 	int arrival;
