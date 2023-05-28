@@ -13,8 +13,8 @@ public class Question_9{
 	public static void compute(int[] arr1 , int[] arr2) {
 		Arrays.sort(arr1); Arrays.sort(arr2);		// logn + logn
 		int min = arr1.length>arr2.length?arr2.length:arr1.length;
-		int[] union = new int[arr1.length + arr2.length];
 		int[] intersection = new int[min];
+		int[] union = new int[arr1.length + arr2.length ];
 		int u=0;
 		int inter = 0;
 	
@@ -22,30 +22,41 @@ public class Question_9{
 		int j=0;
 		for( ; i<arr1.length && j<arr2.length; ) {
 			if(arr1[i]==arr2[j]) {
+				union[u] = arr1[i]; u++; 
 				intersection[inter] = arr1[i];
-				union[u] = arr1[i];
-				u++;
 				inter++;
 				i++;
 				j++;
 			}else if(arr1[i]<arr2[j]) {
 				while(i<arr1.length&&arr1[i]<arr2[j]) {
+					union[u] = arr1[i]; u++; 
 					i++;
-					union[u] = arr1[i];
-					u++;
 				}
 			}else {
 				while(j<arr2.length&&arr2[j]<arr1[i] ) {
+					union[u] = arr2[j]; u++; 
 					j++;
-					union[u] = arr2[j];
-					u++;
 				}
 			}
 		}
-		
-		for(i=0 ; i<intersection.length ; i++	) {
-			System.out.println(intersection[i]);
+		while(j<arr2.length) {
+			union[u] = arr2[j];
+			j++;u++;
 		}
+		while(i<arr1.length) {
+			union[u] = arr1[i];
+			i++;
+			u++;
+		}
+		System.out.print("The Intersection is ");
+		for(i=0 ; i<intersection.length ; i++	) {
+			System.out.print(intersection[i]+" ");
+		}System.out.println();
+		System.out.print("Union is ");
+		for(i=0 ; i<union.length ; i++	) {
+			System.out.print(union[i]+" ");
+		}
+		
 	}
 	public static int[] swap(int[] arr , int i , int j) {
 		int temp = arr[i];
