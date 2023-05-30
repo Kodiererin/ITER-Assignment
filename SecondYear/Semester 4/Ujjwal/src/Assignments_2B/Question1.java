@@ -1,5 +1,7 @@
 package Assignments_2B;
 
+import java.util.TreeSet;
+
 public class Question1 {
     public static void main(String[] args) {
         compute();
@@ -11,18 +13,29 @@ public class Question1 {
         tree.add(12);
         tree.add(123);
         tree.add(12);
-
-        // If the element is present in the tree set or not?
-        java.util.Scanner sc = new java.util.Scanner(System.in);
-        System.out.println("Enter the Number that You want to check ");
-        Integer x = sc.nextInt();
-        for (Integer treeSetData : tree) {
-            System.out.println(treeSetData);
-            if(treeSetData-x==0){
-                System.out.println("Element Found");
-                break;
-            }
-        }
-// Will be completed Later
+        
+        display(tree);
+        System.out.println(isBoolean(tree));
+    }
+//    Display The data
+    public static void display(TreeSet<Integer> tree) {
+    	for (Integer data : tree) {
+			System.out.println(data);
+		}
+    }
+//  Check if the Data is present or not
+    public static boolean isBoolean(TreeSet<Integer> tree) {
+    	System.out.println("Enter The Number");
+    	return tree.contains(new java.util.Scanner(System.in).nextInt());   
+    }
+//    Remove an Element from tree
+    public static void removeElement(java.util.TreeSet<Integer> tree) {
+    	System.out.println("Enter The Number");
+    	int num = new java.util.Scanner(System.in).nextInt();
+    	if(tree.contains(num)){
+    		tree.remove(num);
+    	}else {
+    		System.out.println("The Number Does Not Exist");
+    	}
     }
 }

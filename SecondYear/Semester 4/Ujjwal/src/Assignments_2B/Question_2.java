@@ -15,8 +15,7 @@ class Address {
         this.post = post;
     }
     public String toString() {
-		return this.plotNo+" "+this.at+" "+this.post;
-    	
+		return this.plotNo+" "+this.at+" "+this.post;    	
     }
 
 }
