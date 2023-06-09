@@ -5,13 +5,15 @@
 		<item key="DIALOG_Y_ORIGIN" value="392"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="NodeList"/>
+		<item key="selection" value="Left"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="left"/>
+			<item value="right"/>
 			<item value="Node"/>
 			<item value="arrays"/>
 			<item value="null"/>
@@ -20,6 +22,8 @@
 			<item value="double"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Left"/>
+			<item value="Right"/>
 			<item value="NodeList"/>
 			<item value="Integer"/>
 			<item value="integer"/>
