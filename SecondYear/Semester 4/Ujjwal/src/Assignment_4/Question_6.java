@@ -9,7 +9,7 @@ public class Question_6 {
 		int j = findMax(arr , 0 , arr.length-1);
 		
 		for(int a=0 ; a<arr.length ; a++) {
-			if(arr[a]==i) {
+			if(arr[a]==i) { 
 				int m = a;
 				while(arr[m]!=j) {
 					if(arr[m]+1!=arr[m+1]) {
