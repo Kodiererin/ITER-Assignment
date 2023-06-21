@@ -78,6 +78,61 @@ public class Heap_DataStructure {
 		public void decreaseKey(int[] arr , int index , int dataToBeSwapped) {
 			this.arr[index] = dataToBeSwapped;
 			minHeapify(index);
+//			while(index!=0 && arr[getParent(index)]>arr[index]) {
+//				swap(arr,index,getParent(index));/
+//				index = getParent(index);
+//			}
+		}
+		
+//		Delete The Element from the Heap
+		public int deleteElement(int data) {
+			int index = 0;
+			for(int i=0 ; i<this.arr.length ; i++) {
+				if(data==arr[i]);
+				{
+					index = i;
+					break;
+				}
+			}
+			swap(arr , index , this.size);
+			this.size--;
+			minHeapify(index);
+			return this.arr[index];
+		}
+		
+//		Build Heapify 
+		public void buildHeap() {
+			for(int i=((this.size-1)-1)/2 ; i>=0 ; i--) {
+//				minHeapify(i);				// for MinHeap 
+				maxHeapify(i); 				// for MaxHeap
+			}
+		}
+		
+		public void heapSort() {
+//			First Build the Heap
+			buildHeap();
+			for(int i=(this.size-1)-1 ; i>0 ; i--) {
+				maxHeapify(i);
+			}
+		}
+
+		
+//		Code for Build a Max Heap
+		public void maxHeapify(int i) {
+			int largest = 0;
+			int leftNode = getLeft(i);
+			int rightNode= getLeft(i);
+			
+			if(leftNode<this.size && arr[leftNode]>arr[i]) {
+				largest = leftNode;
+			}
+			if(rightNode<this.size && arr[rightNode]>arr[leftNode]) {
+				largest = rightNode;
+			}
+			if(largest!=i) {
+				swap(arr,largest,i);
+				maxHeapify(largest);
+			}
 		}
 		
 //		Creating a Swap Function
