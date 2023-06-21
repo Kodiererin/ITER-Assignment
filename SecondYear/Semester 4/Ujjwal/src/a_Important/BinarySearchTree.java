@@ -46,7 +46,7 @@ public class BinarySearchTree {
 //		deapthFirstSearch(Root);
 		
 //		Searching of Data
-		searching(Root, 14);
+//		searching(Root, 14);
 		
 	}
 //	postOrder Traversal
