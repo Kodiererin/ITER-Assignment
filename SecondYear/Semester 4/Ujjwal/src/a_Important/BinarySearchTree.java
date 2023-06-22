@@ -125,4 +125,34 @@ public class BinarySearchTree {
 			}
 		}
 	}
+	
+	
+//	Insertion in Binary Search Tree.
+//	Write a Code to Insert the code of Insertion Function
+//	Recursive Java Implementation
+	public static Node insertData(Node Root, int x)
+	{   // BigOh oh H extra space.
+		if(Root==null) return new Node(x);
+		if(Root.data>x) { Root.left = insertData(Root.left,x);}
+		else if(Root.data<x) { Root.right = insertData(Root.right,x);}
+		return Root;
+	}
+//	Iterative Insert
+	public static Node iterativeInsert(Node root , int x)
+	{  // BigOg(1) Extra Space.
+		Node temp = new Node(x);
+		Node parent = null;
+		Node curr = root;
+		while(curr!=null)
+		{
+			parent = curr;
+			if(curr.data>x) curr = curr.left;
+			else if(curr.data<x) curr = curr.right;
+			else {return root;}
+		}
+		if(parent==null) return temp;
+		if(parent.data>x) parent.left = temp;
+		else parent.right = temp;
+		return root;
+	}
 }

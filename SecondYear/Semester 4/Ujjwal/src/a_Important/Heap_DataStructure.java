@@ -36,9 +36,9 @@ public class Heap_DataStructure {
 //					Swap until the Condition is Dissatisfied
 					swap(arr, i, getParent(i));
 					i = getParent(i);
+//					minHeapify(i);
 				}
 			}
-			minHeapify(0);
 		}
 
 //		min Heapify function 
