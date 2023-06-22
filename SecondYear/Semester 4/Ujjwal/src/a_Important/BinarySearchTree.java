@@ -48,6 +48,9 @@ public class BinarySearchTree {
 //		Searching of Data
 //		searching(Root, 14);
 		
+//		Find Max in BST
+		System.out.println(findMax(Root));
+		
 	}
 //	postOrder Traversal
 	public static void postOrder(Node root) {
@@ -154,5 +157,21 @@ public class BinarySearchTree {
 		if(parent.data>x) parent.left = temp;
 		else parent.right = temp;
 		return root;
+	}
+	
+//	//	Find Min and Find Max in BST
+	public static int findMax(Node root ) {
+		Node curr = root;
+		while(curr.right.right!=null) {
+			curr = curr.right;
+		}
+		return curr.right.data;
+	}
+	public static int findMin(Node root ) {
+		Node curr = root;
+		while(curr.left.left!=null) {
+			curr = curr.left;
+		}
+		return curr.left.data;
 	}
 }

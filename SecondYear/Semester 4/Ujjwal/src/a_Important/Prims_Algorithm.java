@@ -44,7 +44,15 @@ public class Prims_Algorithm {
 					key[v] = Math.min(key[v],arr[u][v]);
 				}
 			}
+			
 		}
 		System.out.println(result);
+		
+//		This is the Overall Path Weights which has been computed.
+		for(int i=0 ; i<key.length ; i++) {
+			System.out.print(key[i]+" ");
+		}
 	}
 }
+
+//	Github me Stars Toh De dete

@@ -52,6 +52,11 @@ public class Heap_DataStructure {
 			if (rightNode < this.size && arr[rightNode] < arr[leftNode]) {
 				smallest = rightNode;
 			}
+//			Lets Shorten the code
+			
+//			smallest = leftNode<this.size&&arr[leftNode]<arr[i]?leftNode:rightNode<this.size&&arr[rightNode]<arr[leftNode]?rightNode:leftNode;
+			
+			
 			if (smallest != i) {
 				swap(arr, smallest, i);
 				minHeapify(smallest);
