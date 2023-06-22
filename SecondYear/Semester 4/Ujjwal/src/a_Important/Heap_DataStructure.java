@@ -32,12 +32,13 @@ public class Heap_DataStructure {
 			else {
 				this.size++;
 				this.arr[this.size - 1] = data;
-				for (int i = this.size - 1; i != 0 && getParent(i) > this.arr[i];) {
+				for (int i = this.size - 1; i != 0 && this.arr[getParent(i)]> this.arr[i];) {
 //					Swap until the Condition is Dissatisfied
 					swap(arr, i, getParent(i));
 					i = getParent(i);
 				}
 			}
+			minHeapify(0);
 		}
 
 //		min Heapify function 
@@ -160,6 +161,8 @@ public class Heap_DataStructure {
 		int size = 10;
 		Heap myHeap = new Heap(size);
 		myHeap.insertHeap(40);
+		myHeap.insertHeap(50);
+		myHeap.insertHeap(3);		
 		myHeap.insertHeap(20);
 		myHeap.insertHeap(30);
 		
