@@ -34,6 +34,7 @@ public class c_minimumSWAP {
 		for(int j=0 ; j<arr.length ; j++) {
 			System.out.print(arr[j]+" ");
 		}
-		System.out.println(swap);
+		System.out.println();
+		System.out.println("Total Swaps Occured is "+swap);
 	}
 }

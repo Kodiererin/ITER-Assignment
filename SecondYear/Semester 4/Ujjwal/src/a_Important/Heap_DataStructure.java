@@ -94,7 +94,6 @@ public class Heap_DataStructure {
 			int index = 0;
 			for (int i = 0; i < this.arr.length; i++) {
 				if (data == arr[i])
-					;
 				{
 					index = i;
 					break;
@@ -166,6 +165,7 @@ public class Heap_DataStructure {
 		
 //		Heapsort Operation
 		myHeap.heapSort();
+		
 		
 		myHeap.displayHeap();
 	}
