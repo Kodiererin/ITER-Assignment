@@ -5,13 +5,16 @@ package April_21;
 //	------------ 	INCOMPLETE CODE ------------------------------
 //	----------------- REWRITE ----------------------------------
 
+import java.util.Arrays;
+
 public class c_twoXOR_number {
 	public static void main(String[] args) {
-		int[] arr = {2,3,4,5,5,2,4,3,4,5};
+		int[] arr = {2,3,4,4,4,4,5,5,5,2,4,3,4,5};
 //		int[] arr = {2,2,2,5,5,5};
 		find2Xor(arr);
 	}
 	public static void find2Xor(int[] arr) {
+		Arrays.sort(arr);
 		int sum = 0;
 		for(int i=0 ; i<arr.length ; i++) {
 			sum = sum^arr[i];
@@ -31,7 +34,7 @@ public class c_twoXOR_number {
 			}
 		}
 		System.out.println(s1);
-		System.out.println(s2);
+//		System.out.println(s2);
 	}
 	public static void display(int[] arr ) {
 		for(int i=0 ; i<arr.length ; i++) {

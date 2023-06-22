@@ -37,6 +37,7 @@ public class b_XOR_Question {
 		int found = 0;
 		for(int i=1 ; i<arr.length ; i++) {
 			int m = arr[i]^arr[i-1];
+			System.out.println("This is m "+m);
 //			System.out.println(m);
 			if(m!=0) {
 				found = arr[i];
