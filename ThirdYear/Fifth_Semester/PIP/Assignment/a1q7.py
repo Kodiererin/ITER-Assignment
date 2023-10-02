@@ -1,4 +1,4 @@
-# 7. What output will be displayed when the following commands are executed in Python shell in sequence:
+# 7. What output will be displayed when the following commands are executed in Python shell in sequence:
 # a. >>> a = 6
 # >>> a == 6
 # >>> a < 5.9

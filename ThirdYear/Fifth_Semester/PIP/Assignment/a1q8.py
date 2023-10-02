@@ -6,3 +6,11 @@
 
 marks = int(input("Enter The Marks"))
 print(marks>300 and marks<400)
+
+grade = input("Enter the Grade ")
+print(grade>='A' and grade<='Z')
+
+experience = int(input("Enter the Experience "))
+print(experience>=4)
+
+
