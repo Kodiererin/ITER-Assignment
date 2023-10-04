@@ -1,5 +1,8 @@
+/*7. Implement the following decision table using a multiple-alternative if statement. Assume that the
+wind speed is given as an integer.*/
+#include<stdio.h>
 int main(){
-    printf("Enter The Speed of the Wind");
+    printf("Enter the Speed of the Wind");
     int wind;
     scanf("%d",&wind);
     if(wind<25)
