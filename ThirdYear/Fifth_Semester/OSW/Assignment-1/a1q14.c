@@ -1,11 +1,23 @@
-/*14. The following C code snippet illustrate the use ∗ as minimum field width feature in printf function.
-Write the output of the code snippet assuming as 1 blank space.
-*/
+/*14. C also contains other form assignment operators: +=, -+, *=, /=, %= etc., called short hand operators.
+Suppose that i and j are integer variables whose values are 5 and 7, and f and g are floating-point
+variables whose values are 5.5 and -3.25. Determine the value of the expressions*/
 
-int main()
-{
-    int ivar = 1234;
-    printf(":%.*d:\n", 7, ivar);
-    printf(":%-.*d:\n", 7, ivar);
-    return 0;
+#include<stdio.h>
+int main(){
+	int i = 5;
+	int j = 7;
+	float f = 5.5;
+	float g = -3.25;
+	
+	i += 5;
+	f -= g;
+	j *= ( i - 3);
+	f /= 3;
+	i %= ( j - 2 );
+	
+	printf("%d\n",i);
+	printf("%d\n",j);
+	printf("%f\n",f);
+	
+	return 0;
 }

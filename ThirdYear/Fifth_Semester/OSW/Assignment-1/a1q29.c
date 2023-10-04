@@ -1,12 +1,16 @@
-/*29. A C program contains the following form; Suppose that the following string has been assigned to text
-Programming with C cab be a challenging creative activity. Show the output resulting from the following printf statements*/
+/*29. verify the output/ error of the following code snippet;
+int i=2,j=0;
+int k=i&&j=1;
+printf("%d\n",k);*/
 
+#include <stdio.h>
 int main(){
-    char text[100] = "Programming with C cab be a challenging creative activity";
-    printf("%s\n",text);
-printf("%18s\n",text);
-printf("%.18s\n",text);
-printf("%18.7s\n",text);
-printf("%-18.7s\n",text);
-return 0;
+    int i=2;
+    int j=0;
+    int k= i && j = 1;
+    printf("%d\n",k);
+    return 0;
 }
+
+// This will throw an error ie: 1value as left operand of assignment 
+// int k= i && j = 1;

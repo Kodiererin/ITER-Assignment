@@ -1,13 +1,15 @@
-/*Choose the output of the code snippet*/
+/*27. State the output of the following code snippet;
+int i=3>4, j=4>3;
+int k=(i=j);
+int l=(k==j);
+printf("%d %d %d %d",i,j,k,l);*/
 
 #include <stdio.h>
+int main(){
+    int i=3>4, j=4>3;
+    int k=(i=j);
+    int l=(k==j);
+    printf("%d %d %d %d",i,j,k,l);
 
-int main()
-{
-int num1=0,num2=0,num3=0;
-printf("Enter the number as <345678>:");
-scanf("%1d%2d%3d",&num1,&num2,&num3);
-num1=num1+num2+num3;
-printf("%d\n",num1);
-return 0;
+    return 0;
 }

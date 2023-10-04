@@ -1,13 +1,9 @@
-/* 7. Show the exact form of the output line when n is 345.(consider = 	1 blank.
-	printf("Three values of n are %4d*%5d*%d\n",n,n,n);
-*/
-
-
+/*7. ASCII code for the character ? is 63. Characters are represented by integer codes, C permits con-
+version of type char to type int and vice versa. So find the output for the given code snippet;*/
 #include<stdio.h>
 int main(){
-	int num1;
-	printf("Enter A Three Digit Number ");
-	scanf("%d",&num1);
-	printf("Three Values of N are %4d*%5d*%d\n",num1,num1,num1);
+	char c = '?';
+	int q_code = (int)'?';
+	printf("%d %c %d\n",q_code,'?','?');
 	return 0;
 }

@@ -1,19 +1,16 @@
-/* State the data types would you use to represent the following items: number of students in your
-section, a letter grade on the AD1 exam, average number of days in a semester, the name of the topper
-of your class, total number of courses in this semester. Also specify the format specifier/placeholder
-for the variables used in the above case.*/
+/*8. The following expressions contain different operands and operators assuming x=3.0 , y=4.0 , and
+z=2.0 are type double , flag=0 is type int. Write each expressions value.*/
 
 #include<stdio.h>
 int main(){
-	int students;
-	char grade[1];
-	int avgDays;
-	int toppers;
-	int courses;
+	double x=3.0;
+	double y = 4.0;
+	double z = 2.0;
+	int flag = 0;
 	
-	printf("Enter No Of Students\nGrade,Average Days\nNo of Toppers\nNo of Courses\n");
-	scanf("%d %s %d %d %d",&students,grade,&avgDays,&toppers,&courses);
-	
-	printf("Student Details and Class Details \n%d\n%s\n%d\n%d\n%d",students,grade,avgDays,toppers,courses);
+	printf("%d\n",!flag);
+	printf("%d\n",((x+y/z)<=3.5));
+	printf("%d\n",(!flag||(y+z >= x-z)));
+	printf("%d\n",!(flag || (y+z)>=(x-z)));
 	return 0;
 }

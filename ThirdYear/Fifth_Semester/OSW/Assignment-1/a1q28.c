@@ -1,8 +1,11 @@
-/*28. Choose the output of the code snippet*/
+/*28. State the output of the following code snippet;
+int x=400;
+printf("%d %d\n",x=40,x>=50);
+*/
 
-int main()
-{
-int i=10,m=10;
-printf("%d",printf("%d %d ",i,m));
-return 0;
+#include <stdio.h>
+int main(){
+    int x=400;
+printf("%d %d\n",x=40,x>=50);
+    return 0;
 }

@@ -1,9 +1,21 @@
-/*21. Predict the output of the given code snippet that illustrates how printed output can be labeled*/
+/*21. Determine the value of each of the following expressions, assume that a is an unsigned integer variable
+whose initial value is 0x6db7.
+(a) a &= 0x7f
+(b) a ˆ= 0x7f
+(c) a |= 0x7f
+(d) a = a & 0x3f06
+(e) a = a | 0x3f06 << 8*/
 
-int main()
-{
-    float a = 2.2, b = -6.2, x1 = .005, x2 = -12.88;
-    printf("$%4.2f %7.1f%%\n", a, b);
-    printf("x1=%7.3f x2=%7.3f\n", x1, x2);
-    return 0;
+
+#include<stdio.h>
+int main(){
+    printf("Hello World\n");
+    int a = 0x6db7;
+    printf("%d\n",a&=0x7f);
+    printf("%d\n",a^=0x7f);
+    printf("%d\n",a |= 0x7f);
+    a = a & 0x3f06;
+    printf("%d\n",a);
+    a = a | 0x3f06 << 8;
+    printf("%d\n",a);
 }

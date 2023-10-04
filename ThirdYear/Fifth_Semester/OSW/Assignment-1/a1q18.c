@@ -1,18 +1,18 @@
-/* 18. The following program shows the placement of flags(i.e 	-, 		+, 0, space, #) in printf format string just
-	after the symbol % to get some specific affects in the 		appearance of 	the printf output.
-*/
+/*18. Illustrate the purpose of the following code snippet over the inputs a,b and c respectively.
+int m1,m2,a,b,c;
+printf("Enter the values of a,b,c:");
+scanf("%d%d%d",&a,&b,&c);
+m1=(a>b)?a:b;
+m2=(m1>c)?m1:c;
+printf("%d\n",m2);*/
 
-// Proceed from Here.
-
-#include <stdio.h>
-int main()
-{
-	int i = 345;
-	float x = 34.0, y = -5.6;
-	printf(":%6d: :%7.0f: :%10.1e:\n", i, x, y);
-	printf(":%-6d: :%-7.0f: :%-10.1e:\n", i, x, y);
-	printf(":%+6d: :%+7.0f: :%+10.1e:\n", i, x, y);
-	printf(":%-+6d: :%-+7.0f: :%-+10.1e:\n", i, x, y);
-	printf(":%6.0d: :%#7.0f: :10g: :%#10g:\n", x, x, y, y);
+#include<stdio.h>
+int main(){
+	int m1,m2,a,b,c;
+	printf("Enter the values of a,b,c:");
+	scanf("%d%d%d",&a,&b,&c);
+	m1=(a>b)?a:b;
+	m2=(m1>c)?m1:c;
+	printf("%d\n",m2);
 	return 0;
 }

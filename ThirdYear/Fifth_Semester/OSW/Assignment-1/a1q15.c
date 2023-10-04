@@ -1,9 +1,11 @@
-/*lowing code snippet shows a case without minimum field width specification, but with precision specification. Write the desired output.*/
+/*15. Suppose that x, y and z are integer variables which have been assigned the values 2, 3 and 4, respec-
+tively. Determine the value of the given expression;*/
 
-int main()
-{
-    float x = 123.456;
-    printf("%f %.3f %.1f %.0f\n", x, x, x, x);
-    printf("%e %.5e %.3e %.0e\n", x, x, x, x);
-    return 0;
+#include<stdio.h>
+int main(){
+	int x=2,y=3,z=4;
+	x*=-2*(y+z)/3;
+	
+	printf("%d",x);
+	return 0;
 }

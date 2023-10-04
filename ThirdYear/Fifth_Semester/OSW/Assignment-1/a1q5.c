@@ -1,11 +1,17 @@
-// Generate the Output
-// The given code snippet generate the same floating-point output in three different from. Mention the
-// two different form int the space provided below the code snippet.
+/*5. Consider the C arithmetic expression 2 ∗ ((i%5) ∗ (4 + (j − 3)/(k + 2))) where i , j and k are integer
+variables. If these variables are assigned the values 8, 15 and 4, respectively, then the given determine
+the value of the expression. (Note: The interpretation of the remainder operation (%) is unclear
+when one of the operands is negative. Most versions of C assign the sign of the first operand to the
+remainder. The % operation is undefined when second operand is zero.)*/
+
+
 #include<stdio.h>
 int main(){
-	double x  =3000.0 , y=0.0035;
-	printf("%f %f %f\n",x,y,x*y,x/y);
-	printf("%f %f %f\n",x,y,x*y,x/y);
-	printf("%f %f %f\n",x,y,x*y,x/y);
+	float i = 8;
+	float j = 15;
+	float k = 4;
+	
+	printf("%f",(2*((int) i%5)*(4+((j-3)/(k+2)))));
 	return 0;
 }
+

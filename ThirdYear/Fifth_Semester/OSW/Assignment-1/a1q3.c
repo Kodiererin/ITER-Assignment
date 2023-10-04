@@ -1,9 +1,14 @@
-// Express the Output of the code snippet
+// Write a Program to find the Third Number using Pythagoras Triple
 
 #include<stdio.h>
 int main(){
-	printf("%d==%f==%lf\n",5,55.5,55.5);
-	printf("%i==%e==%E\n",5,555.5,123.45);
-	printf("%o==%g==%G\n",9,555.5,123.45);
+	int m,n;
+	printf("Enter 2 Sides of the Triangle ");
+	scanf("%d %d",&m,&n);
+	float side1 = m*m - n*n;
+	float side2 = 2*m*n;
+	float hypotenuse = m*m + n*n;
+	
+	printf("Side-1 %f\nSide-2 %f\n Hypotenuse %f",side1,side2,hypotenuse); 
 	return 0;
 }

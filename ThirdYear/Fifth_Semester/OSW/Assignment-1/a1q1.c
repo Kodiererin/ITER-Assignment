@@ -1,7 +1,10 @@
-// Write a Program to Display the Message
-
+// Evaluate a Arithmetic Expresion
 #include<stdio.h>
 int main(){
-	printf("This is My First C Program \nI know:\n\tWhere to Write C Program !\n\tHow to Save and Edit the Program!");
-	return 0;
+	float a = 1.0;
+	float b = 2.0;
+	float c = 3.0;
+	float d = 4.0;
+	printf("Printing the Solution\n");
+	printf("%f",(a-b/c*d));
 }
