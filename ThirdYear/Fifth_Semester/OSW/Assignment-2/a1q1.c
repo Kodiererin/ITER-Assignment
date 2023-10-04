@@ -5,6 +5,6 @@ int main(){
 	float b = 2.0;
 	float c = 3.0;
 	float d = 4.0;
-	printf("Printing the Solution");
-	printf("%f",((a-b)/(c*d)));
+	printf("Printing the Solution\n");
+	printf("%f",(a-b/c*d));
 }

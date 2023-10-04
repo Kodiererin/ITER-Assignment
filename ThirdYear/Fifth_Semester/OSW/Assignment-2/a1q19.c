@@ -18,12 +18,12 @@ int main(){
 	char c = 'c' ;
 	char d = 'd' ;
 	
-	printf("%d",((3*i-2*j)%(2 *d - c));
-	printf("%d",((x>y)&&(i>0)&&(j<5)));
-	printf("%d",(2*x+(y==0)));
-	printf("%d",(2*x+y)==0);
-	printf("%d",(5*(i+j)>'c'));
-	printf("%d",(i++));
+	printf("%d\n",((3*i-2*j)%(2 *d - c)));
+	printf("%d\n",((x>y)&&(i>0)&&(j<5)));
+	printf("%f\n",(2*x+(y==0)));
+	printf("%d\n",(2*x+y)==0);
+	printf("%d\n",(5*(i+j)>'c'));
+	printf("%d\n",(i++));
 	
 	return 0;
 }
