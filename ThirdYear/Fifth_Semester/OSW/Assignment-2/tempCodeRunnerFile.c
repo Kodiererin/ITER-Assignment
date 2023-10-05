@@ -1,18 +1,19 @@
-int main(){
-    printf("Enter The Speed of the Wind");
-    int wind;
-    scanf("%d",&wind);
-    if(wind<25)
-        printf("Not a Strong Wind");
-    if(wind>=25 && wind<=38)
-        printf("String Wind");
-    if(wind>=39 && wind<=54)
-        printf("gale");
-    if(wind>=55 && wind<=72)
-        printf("whole gale");
-    if(wind>72)
-        printf("Hurricane");
-    if(wind<0)
-        printf("Inavlid Input");
+#include <stdio.h>
+
+int main() {
+    int side1, side2, side3;
+
+    printf("Enter the Sides of the Triangle: \n");
+    scanf("%d", &side1);
+    scanf("%d", &side2);
+    scanf("%d", &side3);
+
+    if (side1 == side2 && side2 == side3)
+        printf("Equilateral Triangle\n");
+    else if (side1 != side2 && side2 != side3)
+        printf("Scalene Triangle\n");
+    else
+        printf("Isosceles Triangle\n");
+
     return 0;
 }
