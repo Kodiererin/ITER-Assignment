@@ -1,57 +1,51 @@
-/*13. Keiths Sheet Music needs a program to implement its music teachers discount policy. The program is
-to prompt the user to enter the purchase total and to indicate whether the purchaser is a teacher. The
-store plans to give each customer a printed receipt, so your program is to create a nicely formatted file
-called receipt.txt. Music teachers receive a 10% discount on their sheet music purchases unless the
-purchase total is $100 or higher. In that case, the discount is 12%. The discount calculation occurs
-before addition of the 5% sales tax. Here are two sample output filesone for a teacher and one for a
-nonteacher.
-Total purchases $122.00
-Teacher’s discount (12%) 14.64
-Discounted total 107.36
-Sales tax (5%) 5.37
-Total $112.73
-Total purchases $24.90
-Sales tax (5%) 1.25
-Total $26.15
-Note: to display a % sign, place two % signs in the format string:
-printf("%d%%", SALES_TAX);
-To write the output in the file receipt.txt use output redirection, ./a.out > receipt.txt*/
+/*14. A particular cell phone plan includes 50 minutes of air time and 50 text messages for $15.00 a month.
+Each additional minute of air time costs $0.25, while additional text messages cost $0.15 each. All
+cell phone bills include an additional charge of $0.44 to support 911 call centers, and the entire bill
+(including the 911 charge) is subject to 5 percent sales tax.
+Write a program that reads the number of minutes and text messages used in a month from the user.
+Display the base charge, additional minutes charge (if any), additional text message charge (if any),
+the 911 fee, tax and total bill amount. Only display the additional minute and text message charges if
+the user incurred costs in these categories. Ensure that all of the charges are displayed using 2 decimal
+places.*/
 
 #include<stdio.h>
 
 int main() {
-    printf("Enter The Total Amount\n");
-    float totAmt;
-    scanf("%f", &totAmt);
+    printf("Enter The Number of Minutes: \n");
+    int minutes;
+    scanf("%d", &minutes);
 
-    printf("Are You a Teacher? 0-No | 1-Yes\n");
-    int isTeacher;
-    scanf("%d", &isTeacher);
+    printf("Enter the Number of Text Messages: \n");
+    int messages;  
+    scanf("%d", &messages);
 
-    float teaDiscount;
-    float disTotal;
-    float salesTax1;
-    float total;
+    float cost = 15.00;  
+    float additionalCost = 0.00;
 
-    if (isTeacher == 1) {
-        if (totAmt > 100) {
-            teaDiscount = totAmt * (12.0 / 100);
-        } else {
-            teaDiscount = totAmt * (10.0 / 100);  
-        }
 
-        disTotal = totAmt - teaDiscount;
-        salesTax1 = disTotal * (5.0 / 100);
-        total = salesTax1 + disTotal;
-
-        printf("Total purchases $ %.2f \nTeacher's discount $%.2f \nDiscounted total $%.2f \nSales tax (5%%)$%.2f \nTotal $ %.2f\n", totAmt, teaDiscount, disTotal, salesTax1, total);
-    } else {
-        teaDiscount = 0;
-        disTotal = totAmt - teaDiscount;
-        salesTax1 = disTotal * (5.0 / 100);
-        total = salesTax1 + disTotal;
-
-        printf("Total purchases $ %.2f \nSales tax(5%%) $%.2f \nTotal $ %.2f\n", totAmt, salesTax1, total);
+    if (minutes > 50) {
+        additionalCost += (minutes - 50) * 0.25;
     }
+
+
+    if (messages > 50) {
+        additionalCost += (messages - 50) * 0.15;
+    }
+
+    float supportCharge = 0.44;
+    float totalCost = cost + additionalCost + supportCharge;
+    float tax = 0.05 * totalCost;  
+
+
+    totalCost += tax;
+
+    printf("Basic Cost: %.2f\n", cost);
+    if (additionalCost > 0) {
+        printf("Additional Usage Cost: %.2f\n", additionalCost);
+    }
+    printf("Support Charge: %.2f\n", supportCharge);
+    printf("Tax: %.2f\n", tax);
+    printf("Total Cost: %.2f\n", totalCost);
+
     return 0;
 }
