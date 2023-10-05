@@ -1,0 +1,28 @@
+package Test_2;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class WithBufferedReader {
+	public static void main(String[] args) {
+		 String filepath = "";
+		    long startTime = System.currentTimeMillis();
+		    try(InputStream inputStrem = new BufferedReader(new FileInputStream(filePath)))
+		    {
+		        int bytesRead;
+		        byte[] buffer = new byte[1024];
+		        while((byteRead=inputStream.read(buffer))!=-1)
+		        {
+
+		        }
+		        catch(IOException e)
+		        {
+		            e.printStackTrace();
+		        }
+		        long endTime= System.currenytTimeMillis();
+		        long duration = endTime-startTime;
+		    }
+	}
+}
