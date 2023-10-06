@@ -5,12 +5,10 @@
 import math
 
 
-def areaTriangle(x,y,z):
-   if x+y>z or y+z>x or x+z>y:
-       s = (x + y + z) / 2
-       return math.sqrt(s * (s - x) * (s - y) * (s - z))
-   else:
-       return -1
+def areaTriangle(x, y, z):
+    assert (x + y) > z, "Two sides must be greater than the third side"
+    s = (x + y + z) / 2
+    return math.sqrt(s * (s - x) * (s - y) * (s - z))
 
 
 def main():
