@@ -1,0 +1,40 @@
+/*1. Find the output/ error of following code snippet*/
+
+#include<stdio.h>
+int main(){
+// a.
+	int i = 0;
+	while (i <= 5) {
+		printf("%3d %3d\n", i, 10 - i);
+		i = i + 1;
+	}
+// b.	
+	i=1;
+	while ( )
+	{
+		printf ( "%d ", i++ ) ;
+		if(i>10)
+		break ;
+	}
+	
+// c.
+	int a=1;
+	do {
+		printf("%d ", a++);
+	} while ( a < 10 );
+		int i, j,n=5;
+		for(i=1, j=1; j<= n; i+= 2, j++){
+		printf("%d%d\n", i, j);
+	}
+	
+// d.
+	int count = 11;
+	while (--count+1);
+		printf("count down is %d \n",count);
+		float x = 1.1 ;
+	while ( x == 1.1 ) {
+		printf ( "%f\n", x ) ;
+		x = x - 0.1 ;
+	}	
+	return 0;
+}

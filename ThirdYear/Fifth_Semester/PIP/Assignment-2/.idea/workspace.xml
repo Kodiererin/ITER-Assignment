@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7abf54a8-8b2e-4b51-8b7a-e16e5b618940" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/Looping1.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/Looping2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/Looping3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/Looping4.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/Looping5.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/Looping6.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OSW/6_Oct/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a2q13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2q10.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2q10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2q11.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2q11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2q12.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2q12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2q14.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2q14.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2q7.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2q7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2q8.py" beforeDir="false" afterPath="$PROJECT_DIR$/a2q8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +33,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "C:/Users/ujjwa/OneDrive/Desktop/ITER-Assignment/ThirdYear/Fifth_Semester/PIP/Assignment",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ujjwa/OneDrive/Desktop/ITER-Assignment/ThirdYear/Fifth_Semester/PIP/Assignment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="Assignment" />
@@ -101,6 +85,9 @@
       <updated>1696157843907</updated>
       <workItem from="1696157845089" duration="4492000" />
       <workItem from="1696172818945" duration="6680000" />
+      <workItem from="1696669871427" duration="1000" />
+      <workItem from="1696691690059" duration="2000" />
+      <workItem from="1696862461174" duration="17000" />
     </task>
     <servers />
   </component>
@@ -109,8 +96,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Assignment$a1q8.coverage" NAME="a1q8 Coverage Results" MODIFIED="1696174821386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Assignment_2$a2q16.coverage" NAME="a2q16 Coverage Results" MODIFIED="1696524773760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$a1q14.coverage" NAME="a1q14 Coverage Results" MODIFIED="1696226494279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_2$a2q16.coverage" NAME="a2q16 Coverage Results" MODIFIED="1696617521187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment_2$a2q7.coverage" NAME="a2q7 Coverage Results" MODIFIED="1696531037980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$A1Q3.coverage" NAME="A1Q3 Coverage Results" MODIFIED="1696173591135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$a1q5.coverage" NAME="a1q5 Coverage Results" MODIFIED="1696174023259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -123,8 +110,8 @@
     <SUITE FILE_PATH="coverage/Assignment_2$a2q4.coverage" NAME="a2q4 Coverage Results" MODIFIED="1696530425493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$A1Q1.coverage" NAME="A1Q1 Coverage Results" MODIFIED="1696172922924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment_2$a2q15.coverage" NAME="a2q15 Coverage Results" MODIFIED="1696617174040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Assignment_2$a2q17.coverage" NAME="a2q17 Coverage Results" MODIFIED="1696524838732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$a1q15.coverage" NAME="a1q15 Coverage Results" MODIFIED="1696227910768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_2$a2q17.coverage" NAME="a2q17 Coverage Results" MODIFIED="1696617562464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment$a1q12.coverage" NAME="a1q12 Coverage Results" MODIFIED="1696225233392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment_2$a2q14.coverage" NAME="a2q14 Coverage Results" MODIFIED="1696616778563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Assignment_2$a2q6.coverage" NAME="a2q6 Coverage Results" MODIFIED="1696530797790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

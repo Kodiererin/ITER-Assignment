@@ -1,0 +1,1 @@
+Hello Java, I am writing a Text into a .txt File.
