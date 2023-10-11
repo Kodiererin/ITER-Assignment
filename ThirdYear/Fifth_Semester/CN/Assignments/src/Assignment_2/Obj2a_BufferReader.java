@@ -26,25 +26,31 @@ public class Obj2a_BufferReader {
 		
 		writeFile();
 	}
-	public static void writeFile() {
-		System.out.println("Hello User , Enter the Text that you want to write into the File \n");
-		Scanner sc = new java.util.Scanner(System.in);
+	static void writeFile() {
+		System.out.println("Time Efficiency Using Buffered Stream (With Buffer)");
+
+		Scanner sc = new Scanner(System.in);
 		String text = sc.nextLine();
-		
-		File yourFile = new File("Objective2a.txt");
-		try {
-			yourFile.createNewFile();
-			FileOutputStream fis = new FileOutputStream(yourFile);
-			BufferedOutputStream bos = new BufferedOutputStream(fis);
-			bos.write(text.getBytes());
-			System.out.println("File Write Completed");
-			
-			
-			
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		 long startTimeBuffered = System.nanoTime();
+        writeFileBuffered(text);
+        long endTimeBuffered = System.nanoTime();
+        long timeBuffered = endTimeBuffered - startTimeBuffered;
+        System.out.println("Time taken using buffered stream (with buffer): " + timeBuffered + " nanoseconds");
+        sc.close();
 		
 	}
+	public static void writeFileBuffered(String text) {
+        try {
+            File file = new File("Objective2a_BufferedWithBuffer.txt");
+            file.createNewFile();
+            FileOutputStream fos = new FileOutputStream(file);
+            BufferedOutputStream bos = new BufferedOutputStream(fos);
+            bos.write(text.getBytes());
+            bos.close();
+            System.out.println("File Write Completed (Buffered with buffer)");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+	
 }

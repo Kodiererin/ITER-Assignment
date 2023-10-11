@@ -22,7 +22,6 @@ public class Obj1_WriteData {
 		System.out.println("Section : C");
 		System.out.println("Branch : Computer Science Engineering");
 		System.out.println("-----------------------------------------------------------------");
-		
 		writeFile();
 		
 	}
