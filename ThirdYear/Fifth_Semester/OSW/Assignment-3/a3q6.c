@@ -29,8 +29,10 @@ int main(){
 	int cat3=0;	// <50	miles
 	int avgcat3=0;
 	int scanfCheck = 0;
+	int ctr=0;
+
 	
-	while(scanfCheck!=-1){
+	while(ctr!=27){
 		scanfCheck = scanf("%d",&speed);
 		//printf("%d",scanfCheck);
 		if(speed>90){
@@ -43,6 +45,7 @@ int main(){
 			avgcat3+=speed;
 			cat3++;
 		}
+		ctr++;
 	}
 	
 	// a. average Speed of each categories

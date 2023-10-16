@@ -7,32 +7,35 @@ Each batting record is followed by a newline character. Your program should not 
 array and array processing.
 */
 
-#include<stdio.h>
-int main(){
-	printf("Calculating the Hits of a Batsman");
-	int ip = 0;
-	char c;
-	
-	while(ip!=-1){
-		ip = scanf("%c",&c);
-		char storeNum;
-		int storeHit = 0;
-		int totalBall = 0;
-		char record[]="";
-		while(c!='\n'){
-			if(c<'A'){
-				storeNum = c;
-			}
-			else{
-				record = strcat(record,c);
-			}
-			if(c=='H' || c=='P'){
-				storeHit++;
-			}
-			totalBall++;
-		}	
-		printf("Player %c's record : %d\n",storeNum,record);
-		printf("Player %c's batting average : %f",storeNum,totalBall/storeHit);
-	}
-	return 0;
+#include <stdio.h>
+
+int main() {
+    int playerNo, atBats, hits;
+    while(scanf("%d", &playerNo) == 1) {
+        char record;
+        atBats = 0;
+        hits = 0;
+
+        printf("Player %d: ", playerNo);
+        while (scanf(" %c", &record) == 1 && record != '\n') {
+            if (record == 'H' || record == 'O' || record == 'W' || record == 'S' || record == 'P') {
+                atBats++;
+            }
+
+            if (record == 'H') {
+                hits++;
+            }
+        }
+
+
+        double battingAverage = (double)hits / atBats;
+        printf("Batting Records: ");
+        rewind(stdin); 
+        while (scanf(" %c", &record) == 1 && record != '\n') {
+            printf("%c ", record);
+        }
+        printf("| Batting Average: %.3f\n", battingAverage);
+    }
+
+    return 0;
 }

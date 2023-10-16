@@ -5,15 +5,21 @@ remainder of one divide by the other.*/
 
 #include<stdio.h>
 int main(){
-	int dividend,divisor;
-	printf("Enter The Dividend and the Divisor \n");
-	scanf("%d%d",&dividend,&divisor);
-	while(dividend%divisor){
-		int rem = dividend%divisor;
-		dividend = rem;
-		divisor = dividend;		
-			  
-	}
-	printf("%d\t%d",dividend , divisor);
-	return 0;
+	int dividend, divisor;
+    printf("Enter the Divisor: ");
+    scanf("%d", &divisor);
+
+    printf("Enter the Dividend: ");
+    scanf("%d", &dividend);
+    dividend = (dividend < 0) ? -dividend : dividend;
+    divisor = (divisor < 0) ? -divisor : divisor;
+
+    while (dividend % divisor != 0) {
+        int remainder = dividend % divisor;
+        dividend = divisor;
+        divisor = remainder;
+    }
+    printf("The Greatest Common Divisor is: %d\n", divisor);
+
+    return 0;
 }
