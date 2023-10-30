@@ -1,0 +1,5 @@
+date_str="Date: $(date +'%Y-%m-%d %H:%M:%S')"
+cal_str="Calendar: $(cal 3 2022)"
+
+echo "$date_str"
+echo "$cal_str"
