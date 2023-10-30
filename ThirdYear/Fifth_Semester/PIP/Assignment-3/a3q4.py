@@ -25,42 +25,45 @@ further output
 import random
 
 
-result = int(random.randint(0,36))
-print('The Spin Resulted in ',result)
+def spin():
+    result = int(random.randint(0, 36))
+    print('The Spin Resulted in ', result)
 
-if result>0:
-    if(result == 1 or result ==  5 or result ==  7 or result ==  9 or result ==  12 or result ==  14 or result ==  16 or result ==  18 or result == 
-19 or result ==  21 or result ==  23 or result ==  25 or result ==  27 or result ==  30 or result ==  32 or result ==  34 or result ==  36):
-        print("Pay Red")
-        if(result%2==0 and result>0):
-            print("Pay even")
-        else :
-            print("Pay Odd")
-        if(result<18 and result>0):
-            print("Pay 1-18")
-        else :
-            print("19-36")
-else:
-    if (result!=0 or result!=00 ):
-        print("Green")
-        if(result%2==0 and result>0):
-            print("Pay even")
-        else :
-            print("Pay Odd")
-        if(result<18 and result>0):
-            print("Pay 1-18")
-        else :
-            print("19-36")
+    if result > 0:
+        if (
+                result == 1 or result == 5 or result == 7 or result == 9 or result == 12 or result == 14 or result == 16 or result == 18 or result ==
+                19 or result == 21 or result == 23 or result == 25 or result == 27 or result == 30 or result == 32 or result == 34 or result == 36):
+            print("Pay Red")
+            if (result % 2 == 0 and result > 0):
+                print("Pay even")
+            else:
+                print("Pay Odd")
+            if (result < 18 and result > 0):
+                print("Pay 1-18")
+            else:
+                print("19-36")
     else:
-        print("Pay Black")
-        if(result%2==0 and result>0):
-            print("Pay even")
-        else :
-            print("Pay Odd")
-        if(result<18 and result>0):
-            print("Pay 1-18")
-        else :
-            print("19-36")
-else:
-    print("Green")
+        if (result != 0 or result != 00):
+            print("Green")
+            if (result % 2 == 0 and result > 0):
+                print("Pay even")
+            else:
+                print("Pay Odd")
+            if (result < 18 and result > 0):
+                print("Pay 1-18")
+            else:
+                print("19-36")
+        else:
+            print("Pay Black")
+            if (result % 2 == 0 and result > 0):
+                print("Pay even")
+            else:
+                print("Pay Odd")
+            if (result < 18 and result > 0):
+                print("Pay 1-18")
+            else:
+                print("19-36")
 
+
+
+spin()

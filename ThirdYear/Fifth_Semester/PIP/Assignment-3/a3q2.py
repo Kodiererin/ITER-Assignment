@@ -9,12 +9,12 @@ program should display an appropriate error message if the user enters a negativ
 """
 
 
-print("HEllo World")
+
 human = float(input("Enter the Number of Human Year"))
 
 if human<0:
     print("Human Year Less than 0")
-elif human<=2
+elif human<=2:
     print(human*10.5)
 else :
     print(2*10. + (human-2)*4)
