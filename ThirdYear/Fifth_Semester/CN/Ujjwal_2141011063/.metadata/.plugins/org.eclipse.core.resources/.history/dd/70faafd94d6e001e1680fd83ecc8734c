@@ -1,0 +1,12 @@
+import java.util.*;
+import java.net.*;
+
+
+public class Objective_3 {
+	public static void main(String[] args) {
+		System.out.println("Get the Version of IP Address whether it is Version 6 or not");
+		InetAddress iNet 
+		
+		
+	}
+}
