@@ -17,9 +17,11 @@ int baseTobase10(int num , int base){
 }
 
 int base10ToarbBase(int num , int base){
-    return
+    return log10(num)/log10(base);
 }
 
 int main(){
+    int data = baseTobase10(100,2);
+    printf(base10ToarbBase(data,10));
     return 0;
 }
