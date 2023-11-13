@@ -1,3 +1,9 @@
+# Name : UJJWAL KUMAR
+# Registration Number : 2141011063
+# Section : C
+
+# ----------------------- MAJOR ASSIGNMENT - 1 --------------------------------------
+
 # 3. (Arbitrary Base Conversions) Write a program that allows the user to convert a number from one
 # base to another. Your program should support bases between 2 and 16 for both the input number
 # and the result number. If the user chooses a base outside of this range then an appropriate error
@@ -43,8 +49,8 @@ def deci2arbBase(decimalInteger,base):
 
 
 def main():
-    print("The Converted Number is ",base2decimal(input("Enter the Number : "),int(input("Enter the Base of the Number"))))
-    print("The Converted Number is ", deci2arbBase(input("Enter the Number : "),int( input("Enter the Base of the Number"))))
+    print("The Converted Decimal  Number is ",base2decimal(input("Enter the Number that you want to convert to Decimal : "),int(input("Enter the Base of the Number"))))
+    print("The Converted Number is at the Entered Base is  ", deci2arbBase(input("Enter the Decimal Number  : "),int( input("Enter the Base of the Number that you want to convert "))))
 
 
 

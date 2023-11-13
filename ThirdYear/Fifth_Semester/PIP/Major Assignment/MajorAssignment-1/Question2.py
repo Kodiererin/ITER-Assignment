@@ -1,3 +1,9 @@
+# Name : UJJWAL KUMAR
+# Registration Number : 2141011063
+# Section : C
+
+# ----------------------- MAJOR ASSIGNMENT - 1 --------------------------------------
+
 # 2. Write two functions, hex2int and int2hex, that convert between hexadecimal digits (0, 1, 2, 3, 4, 5,
 # 6, 7, 8, 9, A, B, C, D, E and F) and decimal (base 10) integers. The hex2int function is responsible
 # for converting a string containing a single hexadecimal digit to a base 10 integer, while the int2hex

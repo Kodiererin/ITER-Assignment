@@ -1,3 +1,8 @@
+# Name : UJJWAL KUMAR
+# Registration Number : 2141011063
+# Section : C
+
+# ----------------------- MAJOR ASSIGNMENT - 1 --------------------------------------
 
 # 1. Write a program that converts a binary (base 2) number to a decimal (base 10). Your program should
 # begin by reading the binary number from the user as a string. Then, it should compute the equivalent
