@@ -16,8 +16,8 @@ def binaryToDecimal(binaryNo):
 
 
 def main():
-    if __name__=='__main__':
-        print(binaryToDecimal(input("Enter a Binary Number : ")))
+    print(binaryToDecimal(input("Enter a Binary Number : ")))
 
 
-main()
+if __name__ == '__main__':
+    main()
