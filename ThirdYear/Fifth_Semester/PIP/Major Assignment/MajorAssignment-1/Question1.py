@@ -12,10 +12,10 @@
 
 def binaryToDecimal(binaryNo):
     decimalValue = 0
-    power = len(binaryNo)
+    power = len(binaryNo)-1
     for i in binaryNo:
         if i=='1':
-            decimalValue = decimalValue + 2 **power
+            decimalValue = decimalValue + 2 ** power
         power = power-1
     return decimalValue
 

@@ -11,25 +11,24 @@
 # including a function that converts from an arbitrary base to base 10, a function that converts from base
 # 10 to an arbitrary base, and a main program that reads the bases and input number from the user.
 
-def base2decimal(num,base):
-    if int(num)<2 or int(base)>16:
-        return ValueError("Invalid Base")
+def base2decimal(num, base):
+    if int(base) < 2 or int(base) > 16:
+        raise ValueError("Invalid Base")
     else:
         deciVal = 0
-        power = len(num)-1
+        power = len(num) - 1
+        base_digits = "0123456789ABCDEF" + "d"
         for i in num:
-            if i.upper() not in "0123456789ABCDEF" or int(i, base) >= int(base):
+            if i.upper() not in base_digits or int(i, base) >= int(base):
                 raise ValueError("Invalid Digit")
-            deciVal = deciVal + int(i, base) * base ** power
-            power  = power-1
+            deciVal += int(i, base) * base ** power
+            power -= 1
 
         return deciVal
 
-# print(base2decimal("100",12))
 
-
-def deci2arbBase(decimalInteger,base):
-    if int(base)<2 or int(base)>16:
+def deci2arbBase(decimalInteger, base):
+    if int(base) < 2 or int(base) > 16:
         raise ValueError("Invalid Base")
     if int(decimalInteger) == 0:
         return "0"
@@ -39,20 +38,27 @@ def deci2arbBase(decimalInteger,base):
 
     x = int(decimalInteger)
     y = int(base)
-    while x>0:
-        rem = x%y
-        convNum = convNum+bDigits[rem]
-        x = x//y
+    while x > 0:
+        rem = x % y
+        convNum = convNum + bDigits[rem]
+        x = x // y
 
     return convNum[::-1]
 
 
-
 def main():
-    print("The Converted Decimal  Number is ",base2decimal(input("Enter the Number that you want to convert to Decimal : "),int(input("Enter the Base of the Number"))))
-    print("The Converted Number is at the Entered Base is  ", deci2arbBase(input("Enter the Decimal Number  : "),int( input("Enter the Base of the Number that you want to convert "))))
+    try:
+        input_num = input("Enter the Number that you want to convert to Decimal: ")
+        input_base = int(input("Enter the Base of the Number: "))
+        print("The Converted Decimal Number is", base2decimal(input_num, input_base))
+
+        decimal_num = input("Enter the Decimal Number: ")
+        target_base = int(input("Enter the Base of the Number that you want to convert: "))
+        print("The Converted Number at the Entered Base is", deci2arbBase(decimal_num, target_base))
+
+    except ValueError as e:
+        print(f"Error: {e}")
 
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     main()
