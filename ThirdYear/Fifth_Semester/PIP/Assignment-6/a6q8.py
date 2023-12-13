@@ -27,4 +27,6 @@ def countWords3():
     #print(re.search('(cc|cd|dd)*(3|4)*(aa|bb)', string3).group())
     print(re.search('(cc|cd|dd)*(3|4)*(aa|bb)*', string3).group())
 
-countWords3()
+countWords()
+countWords2()
+
