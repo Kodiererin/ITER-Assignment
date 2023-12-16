@@ -22,6 +22,8 @@ int nextPrime(int x){
 	return y;
 }
 
+
+
 int main(){
 	int num;	
 	printf("Enter The Number \n");
