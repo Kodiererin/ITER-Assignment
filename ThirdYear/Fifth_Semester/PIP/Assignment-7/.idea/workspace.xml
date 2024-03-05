@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d9a9620b-655d-4f1e-9feb-b03cea1f44c4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A7Q4.py" beforeDir="false" afterPath="$PROJECT_DIR$/A7Q4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q5.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q6.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q8.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a7q9.py" beforeDir="false" afterPath="$PROJECT_DIR$/a7q9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-8/Prog15.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-8/Prog15.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment-8/Prog16.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment-8/Prog16.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2aoCCLQDj52MqF3n9GqT0pdqmne" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.A7Q4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.a7q9.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ujjwa/OneDrive/Desktop/ITER-Assignment/ThirdYear/Fifth_Semester/PIP/Assignment-7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9a9620b-655d-4f1e-9feb-b03cea1f44c4" name="Changes" comment="" />
+      <created>1704975416033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704975416033</updated>
+      <workItem from="1704975417115" duration="5351000" />
+      <workItem from="1705839560801" duration="1202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q1.coverage" NAME="a7q1 Coverage Results" MODIFIED="1704975816508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q6.coverage" NAME="a7q6 Coverage Results" MODIFIED="1704979673652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q8.coverage" NAME="a7q8 Coverage Results" MODIFIED="1704979991880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$A7Q4.coverage" NAME="A7Q4 Coverage Results" MODIFIED="1704977306452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q5.coverage" NAME="a7q5 Coverage Results" MODIFIED="1704978958000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q2.coverage" NAME="a7q2 Coverage Results" MODIFIED="1704976029162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q3.coverage" NAME="a7q3 Coverage Results" MODIFIED="1704976989243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Assignment_7$a7q9.coverage" NAME="a7q9 Coverage Results" MODIFIED="1704981955426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

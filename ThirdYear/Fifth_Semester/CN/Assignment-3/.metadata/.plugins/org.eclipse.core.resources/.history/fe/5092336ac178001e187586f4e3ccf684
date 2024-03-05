@@ -1,0 +1,33 @@
+
+class MyThread2 extends Thread {
+    private int result;
+
+    public void run() {
+        // Simulate some computation
+        int sum = 0;
+        for (int i = 1; i <= 5; i++) {
+            sum += i;
+        }
+        result = sum;
+    }
+
+    public int getResult() {
+        return result;
+    }
+}
+
+public class Question2 {
+    public static void main(String[] args) {
+        MyThread2 thread = new MyThread2();
+        thread.start();
+
+        try {
+            thread.join(); // Wait for the thread to complete
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        int threadResult = thread.getResult();
+        System.out.println("Thread result: " + threadResult);
+    }
+}
