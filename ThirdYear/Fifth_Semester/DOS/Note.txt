@@ -1,0 +1,11 @@
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+4 S  1001     944     942  0  80   0 - 126603 ep_pol tty2    00:00:09 Xorg
+0 S  1001    1085     942  0  80   0 - 47056 do_sys tty2     00:00:00 gnome-sess
+4 R  1001    2992    2579  0  80   0 -  2854 -      pts/0    00:00:00 ps
+
+
+F defines Flag.
+S defines process State
+PID Process Id
+PPID Parent Process ID
+

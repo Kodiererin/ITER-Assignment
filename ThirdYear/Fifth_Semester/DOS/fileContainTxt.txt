@@ -1,0 +1,2 @@
+-rwxrwxrwx 1 student student 188 Oct  9 10:37 cal.txt
+-rwxrwxrwx 1 student student 352 Oct  9 10:40 file.txt

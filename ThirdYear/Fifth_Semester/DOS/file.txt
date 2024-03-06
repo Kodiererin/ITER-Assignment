@@ -1,0 +1,8 @@
+total 1
+drwxrwxrwx 1 student student   0 Oct  3 20:27 Assignment_1
+-rwxrwxrwx 1 student student 188 Oct  9 10:37 cal.txt
+-rwxrwxrwx 1 student student   0 Oct  9 10:39 file.txt
+total 1
+drwxrwxrwx 1 student student   0 Oct  3 20:27 Assignment_1
+-rwxrwxrwx 1 student student 188 Oct  9 10:37 cal.txt
+-rwxrwxrwx 1 student student 176 Oct  9 10:39 file.txt

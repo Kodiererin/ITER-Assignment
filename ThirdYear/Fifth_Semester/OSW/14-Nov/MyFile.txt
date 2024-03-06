@@ -1,0 +1,6 @@
+Function and Pointers : 
+1. Function returning pointers.
+2. Pointer to Function or Function pointer..
+3. Array of Pointers to Function.
+4. Function arg as a function.
+5. Function returning Function.

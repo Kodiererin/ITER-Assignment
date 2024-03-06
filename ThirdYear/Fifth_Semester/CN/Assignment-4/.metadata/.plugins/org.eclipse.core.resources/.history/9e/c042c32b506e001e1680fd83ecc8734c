@@ -1,0 +1,22 @@
+import java.util.*;
+import java.net.*;
+
+
+public class Objective_3 {
+	public static void main(String[] args) {
+		boolean isIP4;
+		boolean isIP6;
+		try {
+			System.out.println("Get the Version of IP Address whether it is Version 6 or not");
+			InetAddress localAddress = InetAddress.getLocalHost();
+			System.out.println(localAddress.toString());
+			System.out.println(Inet4Address.getLocalHost().toString());
+			System.out.println(Inet6Address.getLocalHost().toString());
+			System.out.println(Inet4Address.getLocalHost().toString().equals(localAddress.toString()));
+			System.out.println(Inet6Address.getLocalHost().toString().equals(localAddress.toString()));
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
