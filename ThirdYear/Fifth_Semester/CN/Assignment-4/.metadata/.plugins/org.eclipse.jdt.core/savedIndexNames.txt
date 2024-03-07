@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Ujjwal\Desktop\ITER-Assignment\ThirdYear\Fifth_Semester\CN\Assignment-4\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-296580317.index

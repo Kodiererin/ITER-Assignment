@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Ujjwal\Desktop\ITER-Assignment\ThirdYear\Fifth_Semester\CN\.metadata\.plugins\org.eclipse.jdt.core
-2725172944.index
-1865797976.index
-2671099652.index
-3667060261.index
