@@ -1,5 +1,5 @@
-# 10. What are random variables? Give two examples.
-
+# # 10. What are random variables? Give two examples.
+#
 # Random variables are variables that can take on different values randomly according to some probability distribution. They represent the outcomes of a random phenomenon. There are two types of random variables: discrete and continuous.
 #
 # Discrete Random Variable: A random variable that can take on a countable number of distinct values. Examples include:

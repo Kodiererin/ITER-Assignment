@@ -1,4 +1,4 @@
-# 11. What are independent events? Give two examples of the same
+# # 11. What are independent events? Give two examples of the same
 #
 # Independent events are events where the outcome of one event does not affect the outcome of the other event. In probability theory, two events A and B are independent if the occurrence of A does not affect the probability of B, and vice versa.
 #
