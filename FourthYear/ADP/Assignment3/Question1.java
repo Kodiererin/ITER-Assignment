@@ -2,6 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*
+Question : 1.	Write a POJO class named Person with the following details
+a.	Name (String)
+b.	Age (int)
+c.	City (String)
+d.	Phone number (List)
+take the input from user and print the details.
+
+ */
+
 public class Question1 {
     public static void main(String[] args) {
         POJO obj = new POJO();

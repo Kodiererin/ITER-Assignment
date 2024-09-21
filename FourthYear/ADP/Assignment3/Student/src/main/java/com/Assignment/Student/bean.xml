@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the Student bean -->
+    <bean id="student" class="Student">
+        <!-- Injecting simple properties -->
+        <property name="studentId" value="101"/>
+        <property name="studentName" value="Kumar Anand"/>
+        <property name="studentBranch" value="Computer Science"/>
+
+        <!-- Injecting List for phone numbers -->
+        <property name="studentPhoneNumbers">
+            <list>
+                <value>1234567890</value>
+                <value>0987654321</value>
+            </list>
+        </property>
+
+        <!-- Injecting Map for course and fees -->
+        <property name="studentCourseFees">
+            <map>
+                <entry key="Java" value="5000.00"/>
+                <entry key="Spring Framework" value="7000.00"/>
+                <entry key="Data Structures" value="6000.00"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
